@@ -1,0 +1,4548 @@
+EXPORTS
+    ADPCM_num @1
+    ADPCM_play @2
+    ADPCM_playing @3
+    ADPCM_setvol @4
+    ADPCM_sh_start @5
+    ADPCM_sh_stop @6
+    ADPCM_sh_update @7
+    ADPCM_stop @8
+    AY8910Read @9
+    AY8910Update @10
+    AY8910Write @11
+    AY8910_clock @12
+    AY8910_control_port_0_lsb_w @13
+    AY8910_control_port_0_msb_w @14
+    AY8910_control_port_0_w @15
+    AY8910_control_port_1_lsb_w @16
+    AY8910_control_port_1_msb_w @17
+    AY8910_control_port_1_w @18
+    AY8910_control_port_2_lsb_w @19
+    AY8910_control_port_2_msb_w @20
+    AY8910_control_port_2_w @21
+    AY8910_control_port_3_lsb_w @22
+    AY8910_control_port_3_msb_w @23
+    AY8910_control_port_3_w @24
+    AY8910_control_port_4_lsb_w @25
+    AY8910_control_port_4_msb_w @26
+    AY8910_control_port_4_w @27
+    AY8910_num @28
+    AY8910_read_port_0_lsb_r @29
+    AY8910_read_port_0_msb_r @30
+    AY8910_read_port_0_r @31
+    AY8910_read_port_1_lsb_r @32
+    AY8910_read_port_1_msb_r @33
+    AY8910_read_port_1_r @34
+    AY8910_read_port_2_lsb_r @35
+    AY8910_read_port_2_msb_r @36
+    AY8910_read_port_2_r @37
+    AY8910_read_port_3_lsb_r @38
+    AY8910_read_port_3_msb_r @39
+    AY8910_read_port_3_r @40
+    AY8910_read_port_4_lsb_r @41
+    AY8910_read_port_4_msb_r @42
+    AY8910_read_port_4_r @43
+    AY8910_reset @44
+    AY8910_set_clock @45
+    AY8910_set_volume @46
+    AY8910_sh_reset @47
+    AY8910_sh_start @48
+    AY8910_sh_start_ym @49
+    AY8910_sh_stop @50
+    AY8910_sh_stop_ym @51
+    AY8910_write_port_0_lsb_w @52
+    AY8910_write_port_0_msb_w @53
+    AY8910_write_port_0_w @54
+    AY8910_write_port_1_lsb_w @55
+    AY8910_write_port_1_msb_w @56
+    AY8910_write_port_1_w @57
+    AY8910_write_port_2_lsb_w @58
+    AY8910_write_port_2_msb_w @59
+    AY8910_write_port_2_w @60
+    AY8910_write_port_3_lsb_w @61
+    AY8910_write_port_3_msb_w @62
+    AY8910_write_port_3_w @63
+    AY8910_write_port_4_lsb_w @64
+    AY8910_write_port_4_msb_w @65
+    AY8910_write_port_4_w @66
+    AYReadReg @67
+    AYWriteReg @68
+    A_AUDIO_PLAY @69 DATA
+    A_DOWNMIX @70 DATA
+    A_DUMP_BINARY @71 DATA
+    A_FORMAT_WAVE @72 DATA
+    A_MSG_STDOUT @73 DATA
+    A_QUIET @74 DATA
+    A_SET_VOLUME @75 DATA
+    A_SHOW_CNT @76 DATA
+    A_SHOW_TIME @77 DATA
+    A_WRITE_TO_FILE @78 DATA
+    BSMT2000_clock @79
+    BSMT2000_data_0_w @80
+    BSMT2000_num @81
+    BSMT2000_sh_reset @82
+    BSMT2000_sh_start @83
+    BSMT2000_sh_stop @84
+    C140_r @85
+    C140_set_base @86
+    C140_sh_start @87
+    C140_sh_stop @88
+    C140_w @89
+    C352s @90 DATA
+    CHECK_IRQ_LINES @91
+    CPUIntrf @92 DATA
+    CurrentBank @93 DATA
+    DAC_0_data_w @94
+    DAC_0_signed_data_w @95
+    DAC_1_data_w @96
+    DAC_1_signed_data_w @97
+    DAC_data_16_w @98
+    DAC_data_w @99
+    DAC_num @100
+    DAC_sh_start @101
+    DAC_signed_data_16_w @102
+    DAC_signed_data_w @103
+    DAC_update @104
+    DMADAC_num @105
+    DSoundNextSound @106 DATA
+    ES5505_clock @107
+    ES5505_data_0_r @108
+    ES5505_data_0_w @109
+    ES5505_data_1_r @110
+    ES5505_data_1_w @111
+    ES5505_num @112
+    ES5505_sh_start @113
+    ES5505_sh_stop @114
+    ES5506_clock @115
+    ES5506_data_0_r @116
+    ES5506_data_0_w @117
+    ES5506_data_0_word_r @118
+    ES5506_data_0_word_w @119
+    ES5506_data_1_r @120
+    ES5506_data_1_w @121
+    ES5506_data_1_word_r @122
+    ES5506_data_1_word_w @123
+    ES5506_num @124
+    ES5506_sh_start @125
+    ES5506_sh_stop @126
+    ES5506_voice_bank_0_w @127
+    ES5506_voice_bank_1_w @128
+    GTS3_dacInt @129 DATA
+    GTS3_okim6295_interface @130 DATA
+    GUI_FD_TO_PLAY @131 DATA
+    GUI_NEXT_FILE_READY @132 DATA
+    GUI_PAUSE @133 DATA
+    GUI_PAUSED @134 DATA
+    GUI_PLAY @135 DATA
+    GUI_PLAYING @136 DATA
+    GUI_STOP @137 DATA
+    GUI_STOPPED @138 DATA
+    Get_RATE @139
+    H6280_irq_status_r @140
+    H6280_irq_status_w @141
+    H6280_timer_r @142
+    H6280_timer_w @143
+    HC55516_num @144
+    IRQ_Hack @145 DATA
+    Init_Offset @146 DATA
+    IremGA20_r @147
+    IremGA20_sh_start @148
+    IremGA20_sh_stop @149
+    IremGA20_update @150
+    IremGA20_w @151
+    K005289_sh_start @152
+    K005289_sh_stop @153
+    K007232_num @154
+    K007232_read_port_0_r @155
+    K007232_read_port_1_r @156
+    K007232_read_port_2_r @157
+    K007232_set_bank @158
+    K007232_set_volume @159
+    K007232_sh_start @160
+    K007232_write_port_0_w @161
+    K007232_write_port_1_w @162
+    K007232_write_port_2_w @163
+    K051649_clock @164
+    K051649_frequency_w @165
+    K051649_keyonoff_w @166
+    K051649_sh_start @167
+    K051649_sh_stop @168
+    K051649_volume_w @169
+    K051649_waveform_w @170
+    K052539_waveform_w @171
+    K053260_0_lsb_r @172
+    K053260_0_lsb_w @173
+    K053260_0_r @174
+    K053260_0_w @175
+    K053260_1_lsb_r @176
+    K053260_1_lsb_w @177
+    K053260_1_r @178
+    K053260_1_w @179
+    K053260_clock @180
+    K053260_num @181
+    K053260_read @182
+    K053260_sh_start @183
+    K053260_sh_stop @184
+    K053260_update @185
+    K053260_write @186
+    K054539_0_r @187
+    K054539_0_w @188
+    K054539_1_r @189
+    K054539_1_w @190
+    K054539_clock @191
+    K054539_init_flags @192
+    K054539_num @193
+    K054539_set_gain @194
+    K054539_sh_start @195
+    K054539_sh_stop @196
+    LFO_ComputeStep @197
+    LFO_Init @198
+    MD5Final @199
+    MD5Init @200
+    MD5Transform @201
+    MD5Update @202
+    MPEG_Get_Progress @203
+    MPEG_Play_File @204
+    MPEG_Play_Memory @205
+    MPEG_Set_Loop @206
+    MPEG_Stop_Playing @207
+    MPEG_sh_start @208
+    MPEG_sh_stop @209
+    MSM5205_clock @210
+    MSM5205_data_w @211
+    MSM5205_num @212
+    MSM5205_playmode_w @213
+    MSM5205_reset_w @214
+    MSM5205_set_volume @215
+    MSM5205_sh_reset @216
+    MSM5205_sh_start @217
+    MSM5205_sh_stop @218
+    MSM5205_sh_update @219
+    MSM5205_vclk_w @220
+    MSM5232_0_w @221
+    MSM5232_1_w @222
+    MSM5232_clock @223
+    MSM5232_num @224
+    MSM5232_sh_reset @225
+    MSM5232_sh_start @226
+    MSM5232_sh_stop @227
+    MSM5232_update_one @228
+    Machine @229 DATA
+    MultiPCM_bank_0_w @230
+    MultiPCM_bank_1_w @231
+    MultiPCM_num @232
+    MultiPCM_reg_0_r @233
+    MultiPCM_reg_0_w @234
+    MultiPCM_reg_1_r @235
+    MultiPCM_reg_1_w @236
+    MultiPCM_reg_r @237
+    MultiPCM_sh_start @238
+    MultiPCM_sh_stop @239
+    OKIM6295_clock @240
+    OKIM6295_data_0_lsb_w @241
+    OKIM6295_data_0_msb_w @242
+    OKIM6295_data_0_w @243
+    OKIM6295_data_1_lsb_w @244
+    OKIM6295_data_1_msb_w @245
+    OKIM6295_data_1_w @246
+    OKIM6295_num @247
+    OKIM6295_set_bank_base @248
+    OKIM6295_set_frequency @249
+    OKIM6295_sh_start @250
+    OKIM6295_sh_stop @251
+    OKIM6295_sh_update @252
+    OKIM6295_status_0_lsb_r @253
+    OKIM6295_status_0_msb_r @254
+    OKIM6295_status_0_r @255
+    OKIM6295_status_1_lsb_r @256
+    OKIM6295_status_1_msb_r @257
+    OKIM6295_status_1_r @258
+    OPNPrescaler_w @259
+    POKEY_clock @260
+    POKEY_num @261
+    Play_Offset @262 DATA
+    READ_EA_FPE @263
+    READ_UINT32 @264
+    RF5C400_0_r @265
+    RF5C400_0_w @266
+    RF5C68_r @267
+    RF5C68_reg_w @268
+    RF5C68_sh_start @269
+    RF5C68_sh_stop @270
+    RF5C68_w @271
+    SCSPDSP_Init @272
+    SCSPDSP_SetSample @273
+    SCSPDSP_Start @274
+    SCSPDSP_Step @275
+    SCSP_0_r @276
+    SCSP_0_w @277
+    SCSP_1_r @278
+    SCSP_1_w @279
+    SCSP_IRQCB @280
+    SCSP_MidiIn @281
+    SCSP_MidiOutR @282
+    SCSP_TimersAddTicks @283
+    SCSP_set_ram_base @284
+    SCSP_sh_start @285
+    SCSP_sh_stop @286
+    SCSPs @287 DATA
+    SEGAPCM_sh_start @288
+    SEGAPCM_sh_stop @289
+    SN76496_0_w @290
+    SN76496_1_w @291
+    SN76496_2_w @292
+    SN76496_3_w @293
+    SN76496_clock @294
+    SN76496_num @295
+    SN76496_sh_start @296
+    SegaPCM_r @297
+    SegaPCM_w @298
+    StreamSys_Run @299
+    StreamSys_Update @300
+    TMS5220_clock @301
+    UPD7759_0_busy_r @302
+    UPD7759_0_port_w @303
+    UPD7759_0_reset_w @304
+    UPD7759_0_start_w @305
+    UPD7759_busy_r @306
+    UPD7759_port_w @307
+    UPD7759_reset_w @308
+    UPD7759_set_bank_base @309
+    UPD7759_sh_start @310
+    UPD7759_start_w @311
+    UpdateState @312
+    VLM5030_BSY @313
+    VLM5030_RST @314
+    VLM5030_ST @315
+    VLM5030_VCU @316
+    VLM5030_clock @317
+    VLM5030_data_w @318
+    VLM5030_set_rom @319
+    VLM5030_sh_start @320
+    VLM5030_sh_stop @321
+    VLM5030_sh_update @322
+    WRITE_EA_FPE @323
+    WRITE_UINT32 @324
+    WriteSlot @325
+    XML_DefaultCurrent @326
+    XML_ErrorString @327
+    XML_ExpatVersion @328
+    XML_ExpatVersionInfo @329
+    XML_ExternalEntityParserCreate @330
+    XML_FreeContentModel @331
+    XML_GetBase @332
+    XML_GetBuffer @333
+    XML_GetCurrentByteCount @334
+    XML_GetCurrentByteIndex @335
+    XML_GetCurrentColumnNumber @336
+    XML_GetCurrentLineNumber @337
+    XML_GetErrorCode @338
+    XML_GetFeatureList @339
+    XML_GetIdAttributeIndex @340
+    XML_GetInputContext @341
+    XML_GetSpecifiedAttributeCount @342
+    XML_MemFree @343
+    XML_MemMalloc @344
+    XML_MemRealloc @345
+    XML_Parse @346
+    XML_ParseBuffer @347
+    XML_ParserCreate @348
+    XML_ParserCreateNS @349
+    XML_ParserCreate_MM @350
+    XML_ParserFree @351
+    XML_ParserReset @352
+    XML_SetAttlistDeclHandler @353
+    XML_SetBase @354
+    XML_SetCdataSectionHandler @355
+    XML_SetCharacterDataHandler @356
+    XML_SetCommentHandler @357
+    XML_SetDefaultHandler @358
+    XML_SetDefaultHandlerExpand @359
+    XML_SetDoctypeDeclHandler @360
+    XML_SetElementDeclHandler @361
+    XML_SetElementHandler @362
+    XML_SetEncoding @363
+    XML_SetEndCdataSectionHandler @364
+    XML_SetEndDoctypeDeclHandler @365
+    XML_SetEndElementHandler @366
+    XML_SetEndNamespaceDeclHandler @367
+    XML_SetEntityDeclHandler @368
+    XML_SetExternalEntityRefHandler @369
+    XML_SetExternalEntityRefHandlerArg @370
+    XML_SetNamespaceDeclHandler @371
+    XML_SetNotStandaloneHandler @372
+    XML_SetNotationDeclHandler @373
+    XML_SetParamEntityParsing @374
+    XML_SetProcessingInstructionHandler @375
+    XML_SetReturnNSTriplet @376
+    XML_SetSkippedEntityHandler @377
+    XML_SetStartCdataSectionHandler @378
+    XML_SetStartDoctypeDeclHandler @379
+    XML_SetStartElementHandler @380
+    XML_SetStartNamespaceDeclHandler @381
+    XML_SetUnknownEncodingHandler @382
+    XML_SetUnparsedEntityDeclHandler @383
+    XML_SetUserData @384
+    XML_SetXmlDeclHandler @385
+    XML_UseForeignDTD @386
+    XML_UseParserAsHandlerArg @387
+    XmlGetUtf16InternalEncoding @388
+    XmlGetUtf16InternalEncodingNS @389
+    XmlGetUtf8InternalEncoding @390
+    XmlGetUtf8InternalEncodingNS @391
+    XmlInitEncoding @392
+    XmlInitEncodingNS @393
+    XmlInitUnknownEncoding @394
+    XmlInitUnknownEncodingNS @395
+    XmlParseXmlDecl @396
+    XmlParseXmlDeclNS @397
+    XmlPrologStateInit @398
+    XmlPrologStateInitExternalEntity @399
+    XmlSizeOfUnknownEncoding @400
+    XmlUtf16Encode @401
+    XmlUtf8Encode @402
+    Y8950Init @403
+    Y8950Read @404
+    Y8950ResetChip @405
+    Y8950SetDeltaTMemory @406
+    Y8950SetIRQHandler @407
+    Y8950SetKeyboardHandler @408
+    Y8950SetPortHandler @409
+    Y8950SetTimerHandler @410
+    Y8950SetUpdateHandler @411
+    Y8950Shutdown @412
+    Y8950TimerOver @413
+    Y8950UpdateOne @414
+    Y8950Write @415
+    Y8950_clock @416
+    Y8950_control_port_0_w @417
+    Y8950_control_port_1_w @418
+    Y8950_num @419
+    Y8950_read_port_0_r @420
+    Y8950_read_port_1_r @421
+    Y8950_sh_reset @422
+    Y8950_sh_start @423
+    Y8950_sh_stop @424
+    Y8950_status_port_0_r @425
+    Y8950_status_port_1_r @426
+    Y8950_write_port_0_w @427
+    Y8950_write_port_1_w @428
+    YM2151Init @429
+    YM2151ReadStatus @430
+    YM2151ResetChip @431
+    YM2151SetIrqHandler @432
+    YM2151SetPortWriteHandler @433
+    YM2151Shutdown @434
+    YM2151UpdateOne @435
+    YM2151UpdateRequest @436
+    YM2151WriteReg @437
+    YM2151_clock @438
+    YM2151_data_port_0_lsb_w @439
+    YM2151_data_port_0_w @440
+    YM2151_data_port_1_lsb_w @441
+    YM2151_data_port_1_w @442
+    YM2151_data_port_2_lsb_w @443
+    YM2151_data_port_2_w @444
+    YM2151_num @445
+    YM2151_register_port_0_lsb_w @446
+    YM2151_register_port_0_w @447
+    YM2151_register_port_1_lsb_w @448
+    YM2151_register_port_1_w @449
+    YM2151_register_port_2_lsb_w @450
+    YM2151_register_port_2_w @451
+    YM2151_sh_reset @452
+    YM2151_sh_start @453
+    YM2151_sh_stop @454
+    YM2151_status_port_0_lsb_r @455
+    YM2151_status_port_0_r @456
+    YM2151_status_port_1_lsb_r @457
+    YM2151_status_port_1_r @458
+    YM2151_status_port_2_lsb_r @459
+    YM2151_status_port_2_r @460
+    YM2151_word_0_w @461
+    YM2151_word_1_w @462
+    YM2203Init @463
+    YM2203Read @464
+    YM2203ResetChip @465
+    YM2203Shutdown @466
+    YM2203TimerOver @467
+    YM2203UpdateOne @468
+    YM2203UpdateRequest @469
+    YM2203Write @470
+    YM2203_clock @471
+    YM2203_control_port_0_w @472
+    YM2203_control_port_1_w @473
+    YM2203_control_port_2_w @474
+    YM2203_control_port_3_w @475
+    YM2203_control_port_4_w @476
+    YM2203_num @477
+    YM2203_read_port_0_r @478
+    YM2203_read_port_1_r @479
+    YM2203_read_port_2_r @480
+    YM2203_read_port_3_r @481
+    YM2203_read_port_4_r @482
+    YM2203_sh_reset @483
+    YM2203_sh_start @484
+    YM2203_sh_stop @485
+    YM2203_status_port_0_r @486
+    YM2203_status_port_1_r @487
+    YM2203_status_port_2_r @488
+    YM2203_status_port_3_r @489
+    YM2203_status_port_4_r @490
+    YM2203_write_port_0_w @491
+    YM2203_write_port_1_w @492
+    YM2203_write_port_2_w @493
+    YM2203_write_port_3_w @494
+    YM2203_write_port_4_w @495
+    YM2413Init @496
+    YM2413Read @497
+    YM2413ResetChip @498
+    YM2413SetUpdateHandler @499
+    YM2413Shutdown @500
+    YM2413UpdateOne @501
+    YM2413Write @502
+    YM2413_clock @503
+    YM2413_data_port_0_lsb_w @504
+    YM2413_data_port_0_w @505
+    YM2413_data_port_1_lsb_w @506
+    YM2413_data_port_1_w @507
+    YM2413_data_port_2_lsb_w @508
+    YM2413_data_port_2_w @509
+    YM2413_data_port_3_lsb_w @510
+    YM2413_data_port_3_w @511
+    YM2413_num @512
+    YM2413_register_port_0_lsb_w @513
+    YM2413_register_port_0_w @514
+    YM2413_register_port_1_lsb_w @515
+    YM2413_register_port_1_w @516
+    YM2413_register_port_2_lsb_w @517
+    YM2413_register_port_2_w @518
+    YM2413_register_port_3_lsb_w @519
+    YM2413_register_port_3_w @520
+    YM2413_sh_reset @521
+    YM2413_sh_start @522
+    YM2413_sh_stop @523
+    YM2608Init @524
+    YM2608Read @525
+    YM2608ResetChip @526
+    YM2608Shutdown @527
+    YM2608TimerOver @528
+    YM2608UpdateOne @529
+    YM2608UpdateRequest @530
+    YM2608Write @531
+    YM2608_clock @532
+    YM2608_control_port_0_A_w @533
+    YM2608_control_port_0_B_w @534
+    YM2608_control_port_1_A_w @535
+    YM2608_control_port_1_B_w @536
+    YM2608_data_port_0_A_w @537
+    YM2608_data_port_0_B_w @538
+    YM2608_data_port_1_A_w @539
+    YM2608_data_port_1_B_w @540
+    YM2608_num @541
+    YM2608_read_port_0_r @542
+    YM2608_read_port_1_r @543
+    YM2608_sh_reset @544
+    YM2608_sh_start @545
+    YM2608_sh_stop @546
+    YM2608_status_port_0_A_r @547
+    YM2608_status_port_0_B_r @548
+    YM2608_status_port_1_A_r @549
+    YM2608_status_port_1_B_r @550
+    YM2610BUpdateOne @551
+    YM2610B_sh_start @552
+    YM2610Init @553
+    YM2610Read @554
+    YM2610ResetChip @555
+    YM2610Shutdown @556
+    YM2610TimerOver @557
+    YM2610UpdateOne @558
+    YM2610UpdateRequest @559
+    YM2610Write @560
+    YM2610_clock @561
+    YM2610_control_port_0_A_lsb_w @562
+    YM2610_control_port_0_A_w @563
+    YM2610_control_port_0_B_lsb_w @564
+    YM2610_control_port_0_B_w @565
+    YM2610_control_port_1_A_lsb_w @566
+    YM2610_control_port_1_A_w @567
+    YM2610_control_port_1_B_lsb_w @568
+    YM2610_control_port_1_B_w @569
+    YM2610_data_port_0_A_lsb_w @570
+    YM2610_data_port_0_A_w @571
+    YM2610_data_port_0_B_lsb_w @572
+    YM2610_data_port_0_B_w @573
+    YM2610_data_port_1_A_lsb_w @574
+    YM2610_data_port_1_A_w @575
+    YM2610_data_port_1_B_lsb_w @576
+    YM2610_data_port_1_B_w @577
+    YM2610_num @578
+    YM2610_read_port_0_lsb_r @579
+    YM2610_read_port_0_r @580
+    YM2610_read_port_1_lsb_r @581
+    YM2610_read_port_1_r @582
+    YM2610_sh_reset @583
+    YM2610_sh_start @584
+    YM2610_sh_stop @585
+    YM2610_status_port_0_A_lsb_r @586
+    YM2610_status_port_0_A_r @587
+    YM2610_status_port_0_B_lsb_r @588
+    YM2610_status_port_0_B_r @589
+    YM2610_status_port_1_A_lsb_r @590
+    YM2610_status_port_1_A_r @591
+    YM2610_status_port_1_B_lsb_r @592
+    YM2610_status_port_1_B_r @593
+    YM2612Init @594
+    YM2612Read @595
+    YM2612ResetChip @596
+    YM2612Shutdown @597
+    YM2612TimerOver @598
+    YM2612UpdateOne @599
+    YM2612UpdateRequest @600
+    YM2612Write @601
+    YM2612_clock @602
+    YM2612_control_port_0_A_w @603
+    YM2612_control_port_0_B_w @604
+    YM2612_control_port_1_A_w @605
+    YM2612_control_port_1_B_w @606
+    YM2612_data_port_0_A_w @607
+    YM2612_data_port_0_B_w @608
+    YM2612_data_port_1_A_w @609
+    YM2612_data_port_1_B_w @610
+    YM2612_num @611
+    YM2612_read_port_0_r @612
+    YM2612_read_port_1_r @613
+    YM2612_sh_reset @614
+    YM2612_sh_start @615
+    YM2612_sh_stop @616
+    YM2612_status_port_0_A_r @617
+    YM2612_status_port_0_B_r @618
+    YM2612_status_port_1_A_r @619
+    YM2612_status_port_1_B_r @620
+    YM3526Init @621
+    YM3526Read @622
+    YM3526ResetChip @623
+    YM3526SetIRQHandler @624
+    YM3526SetTimerHandler @625
+    YM3526SetUpdateHandler @626
+    YM3526Shutdown @627
+    YM3526TimerOver @628
+    YM3526UpdateOne @629
+    YM3526Write @630
+    YM3526_clock @631
+    YM3526_control_port_0_w @632
+    YM3526_control_port_1_w @633
+    YM3526_num @634
+    YM3526_read_port_0_r @635
+    YM3526_read_port_1_r @636
+    YM3526_sh_reset @637
+    YM3526_sh_start @638
+    YM3526_sh_stop @639
+    YM3526_status_port_0_r @640
+    YM3526_status_port_1_r @641
+    YM3526_write_port_0_w @642
+    YM3526_write_port_1_w @643
+    YM3812Init @644
+    YM3812Read @645
+    YM3812ResetChip @646
+    YM3812SetIRQHandler @647
+    YM3812SetTimerHandler @648
+    YM3812SetUpdateHandler @649
+    YM3812Shutdown @650
+    YM3812TimerOver @651
+    YM3812UpdateOne @652
+    YM3812Write @653
+    YM3812_clock @654
+    YM3812_control_port_0_w @655
+    YM3812_control_port_1_w @656
+    YM3812_num @657
+    YM3812_read_port_0_r @658
+    YM3812_read_port_1_r @659
+    YM3812_sh_reset @660
+    YM3812_sh_start @661
+    YM3812_sh_stop @662
+    YM3812_status_port_0_r @663
+    YM3812_status_port_1_r @664
+    YM3812_write_port_0_w @665
+    YM3812_write_port_1_w @666
+    YMF262Init @667
+    YMF262Read @668
+    YMF262ResetChip @669
+    YMF262SetIRQHandler @670
+    YMF262SetTimerHandler @671
+    YMF262SetUpdateHandler @672
+    YMF262Shutdown @673
+    YMF262TimerOver @674
+    YMF262UpdateOne @675
+    YMF262Write @676
+    YMF262_clock @677
+    YMF262_data_A_0_w @678
+    YMF262_data_A_1_w @679
+    YMF262_data_B_0_w @680
+    YMF262_data_B_1_w @681
+    YMF262_num @682
+    YMF262_register_A_0_w @683
+    YMF262_register_A_1_w @684
+    YMF262_register_B_0_w @685
+    YMF262_register_B_1_w @686
+    YMF262_sh_reset @687
+    YMF262_sh_start @688
+    YMF262_sh_stop @689
+    YMF262_status_0_r @690
+    YMF262_status_1_r @691
+    YMF271_0_r @692
+    YMF271_0_w @693
+    YMF271_1_r @694
+    YMF271_1_w @695
+    YMF271_sh_start @696
+    YMF271_sh_stop @697
+    YMF278B_control_port_0_A_w @698
+    YMF278B_control_port_0_B_w @699
+    YMF278B_control_port_0_C_w @700
+    YMF278B_control_port_1_A_w @701
+    YMF278B_control_port_1_B_w @702
+    YMF278B_control_port_1_C_w @703
+    YMF278B_data_port_0_A_w @704
+    YMF278B_data_port_0_B_w @705
+    YMF278B_data_port_0_C_w @706
+    YMF278B_data_port_0_r @707
+    YMF278B_data_port_1_A_w @708
+    YMF278B_data_port_1_B_w @709
+    YMF278B_data_port_1_C_w @710
+    YMF278B_data_port_1_r @711
+    YMF278B_num @712
+    YMF278B_sh_start @713
+    YMF278B_sh_stop @714
+    YMF278B_status_port_0_r @715
+    YMF278B_status_port_1_r @716
+    YMZ280B_clock @717
+    YMZ280B_data_0_w @718
+    YMZ280B_data_1_w @719
+    YMZ280B_num @720
+    YMZ280B_register_0_w @721
+    YMZ280B_register_1_w @722
+    YMZ280B_sh_start @723
+    YMZ280B_sh_stop @724
+    YMZ280B_status_0_r @725
+    YMZ280B_status_1_r @726
+    YM_DELTAT_ADPCM_CALC @727
+    YM_DELTAT_ADPCM_Read @728
+    YM_DELTAT_ADPCM_Reset @729
+    YM_DELTAT_ADPCM_Write @730
+    YM_DELTAT_postload @731
+    YM_DELTAT_savestate @732
+    Z80_Driver_Guess_Block @733 DATA
+    Z80_Driver_Inits @734 DATA
+    _AYWriteReg @735
+    _Z10dcs_data_rv @736
+    _Z10dcs_data_wi @737
+    _Z10filter_do0l @738
+    _Z10filter_do1l @739
+    _Z10m1sdr_Exitv @740
+    _Z10m1sdr_Initi @741
+    _Z10tnzs_mcu_rj @742
+    _Z10wof_decodev @743
+    _Z11GLD_SendCmdii @744
+    _Z11cage_read32j @745
+    _Z11dcs_data2_rv @746
+    _Z11dcs_reset_wi @747
+    _Z11dino_decodev @748
+    _Z11filter_initi @749
+    _Z11m1sdr_Pausei @750
+    _Z11pang_decodev @751
+    _Z11play_sampleii @752
+    _Z11waveLogInitiPci @753
+    _Z11waveLogStopv @754
+    _Z12ExtCodeCase0Ph @755
+    _Z12ExtCodeCase1Ph @756
+    _Z12ExtCodeCase2Ph @757
+    _Z12ExtCodeCase3Ph @758
+    _Z12ExtCodeCase4Ph @759
+    _Z12ExtCodeCase5Ph @760
+    _Z12Gakuen_Patchv @761
+    _Z12PFriendsInitl @762
+    _Z12block_decodev @763
+    _Z12cage_reset_wi @764
+    _Z12cage_write32jj @765
+    _Z12dcs_ram_initi @766
+    _Z12es5510_dsp_rjt @767
+    _Z12es5510_dsp_wjtt @768
+    _Z12seibu_bank_wjh @769
+    _Z12seibu_coin_wjh @770
+    _Z12spang_decodev @771
+    _Z12trklist_loadPc @772
+    _Z12waveLogFramePhl @773
+    _Z12waveLogStartv @774
+    _Z13Arkanoid_Initl @775
+    _Z13Hexion_Vblanki @776
+    _Z13cworld_decodev @777
+    _Z13dcs_control_rv @778
+    _Z13gamelist_loadv @779
+    _Z13hatena_decodev @780
+    _Z13kabuki_decodePhS_S_iiiiii @781
+    _Z13m1sdr_IsTherev @782
+    _Z13qtono1_decodev @783
+    _Z13rastan_c000_wjh @784
+    _Z13rastan_d000_wjh @785
+    _Z13sbbros_decodev @786
+    _Z13spangj_decodev @787
+    _Z13ssio_status_rj @788
+    _Z13twin16_sres_rj @789
+    _Z13twin16_sres_wjh @790
+    _Z14Mitchell_Patchittt @791
+    _Z14Mitchell_Timeri @792
+    _Z14cage_control_rv @793
+    _Z14cage_control_wt @794
+    _Z14dcs_set_notifyPFviE @795
+    _Z14m1sdr_PlayStopv @796
+    _Z14main_to_cage_wt @797
+    _Z14marukin_decodev @798
+    _Z14momoko_latch_rj @799
+    _Z14starwars_sin_rj @800
+    _Z14tnzs_workram_rj @801
+    _Z14tnzs_workram_wjh @802
+    _Z14trklist_unloadP4TrkT @803
+    _Z14waveLogSetPathPc @804
+    _Z15csdeluxe_data_wjh @805
+    _Z15m1sdr_HwPresentv @806
+    _Z15m1sdr_PlayStartv @807
+    _Z15m1sdr_SetNoWaiti @808
+    _Z15m1sdr_TimeCheckv @809
+    _Z15m1snd_initQueuev @810
+    _Z15mgakuen2_decodev @811
+    _Z15punisher_decodev @812
+    _Z15qsangoku_decodev @813
+    _Z15seibu_pending_wjh @814
+    _Z15slammast_decodev @815
+    _Z15starwars_sout_wjh @816
+    _Z15tnzs_workram2_rj @817
+    _Z15tnzs_workram2_wjh @818
+    _Z15trklist_getlangv @819
+    _Z15trklist_getnameP4TrkTi @820
+    _Z15trklist_setlangi @821
+    _Z15trklist_setnameP4TrkTiPc @822
+    _Z16Arkanoid_SendCmdii @823
+    _Z16exterm_dac_vol_wjh @824
+    _Z16irem_cpu_decryptiPKh @825
+    _Z16m1sdr_FlushAudiov @826
+    _Z16m1snd_startQueuev @827
+    _Z16main_from_cage_rv @828
+    _Z16starwars_m6532_rj @829
+    _Z16starwars_m6532_wjh @830
+    _Z16trklist_cmd2songP4TrkTi @831
+    _Z16trklist_getextraP4TrkTii @832
+    _Z16trklist_load_xmlP6_iobufPc @833
+    _Z16trklist_setextraP4TrkTiiPc @834
+    _Z16trklist_song2cmdP4TrkTi @835
+    _Z16xmlout_writelistP4TrkTPc @836
+    _Z17exterm_dac_data_wjh @837
+    _Z17m1sdr_SetCallbackPv @838
+    _Z17m1snd_isQueueBusyv @839
+    _Z17seibu_irq_clear_wjh @840
+    _Z17seibu_main_data_wjh @841
+    _Z17seibu_rst10_ack_wjh @842
+    _Z17seibu_rst18_ack_wjh @843
+    _Z17slapfight_dpram_rj @844
+    _Z17slapfight_dpram_wjh @845
+    _Z17trklist_getdefcmdP4TrkT @846
+    _Z17trklist_getfixvolP4TrkT @847
+    _Z17trklist_getlengthP4TrkTi @848
+    _Z18dv_sh_bankswitch_wjh @849
+    _Z18hotdogst_okibank_wjh @850
+    _Z18hotdogst_rombank_wjh @851
+    _Z18m1snd_processQueuev @852
+    _Z18m1snd_setCmdPrefixi @853
+    _Z18mazinger_rombank_wjh @854
+    _Z18sailormn_rombank_wjh @855
+    _Z18seibu_soundlatch_rj @856
+    _Z18starwars_main_wr_wjh @857
+    _Z18sys16_7751_sh_t1_rj @858
+    _Z18tatsumi_hack_oki_rj @859
+    _Z18tnzs_bankswitch1_wjh @860
+    _Z19Hexion_Vblank_Cleari @861
+    _Z19astyanax_rom_decodei @862
+    _Z19m1snd_addToCmdQueuei @863
+    _Z19phantasm_rom_decodei @864
+    _Z19sailormn_okibank0_wjh @865
+    _Z19sailormn_okibank1_wjh @866
+    _Z19seibu_sound_decryptii @867
+    _Z19sys16_7751_sh_dac_wjh @868
+    _Z19sys16_7751_sh_rom_rj @869
+    _Z19trklist_getnumsongsP4TrkT @870
+    _Z20cage_set_irq_handlerPFviE @871
+    _Z20citycon_soundlatch_rj @872
+    _Z20gx400_speech_start_wjh @873
+    _Z20hotchase_K007232_0_rj @874
+    _Z20hotchase_K007232_0_wjh @875
+    _Z20hotchase_K007232_1_rj @876
+    _Z20hotchase_K007232_1_wjh @877
+    _Z20hotchase_K007232_2_rj @878
+    _Z20hotchase_K007232_2_wjh @879
+    _Z20m72_set_sample_starti @880
+    _Z20rtype2_sample_addr_wjh @881
+    _Z20sys16_7751_sh_busy_wjh @882
+    _Z20trklist_getnumextrasP4TrkTi @883
+    _Z21citycon_soundlatch2_rj @884
+    _Z21m1snd_setCmdPrefixStrPi @885
+    _Z21m1snd_setCmdSuffixStrPi @886
+    _Z21m1snd_setQueueInitCmdi @887
+    _Z21snk_sound_callback0_wi @888
+    _Z21snk_sound_callback1_wi @889
+    _Z21tatsumi_hack_ym2151_rj @890
+    _Z22getstar_sh_intenable_wjh @891
+    _Z22m1snd_addToCmdQueueRawi @892
+    _Z22m1snd_getQueueBootTimev @893
+    _Z22rastan_adpcm_trigger_wjh @894
+    _Z23atarigen_ym2151_irq_geni @895
+    _Z23devstor_sh_irqcontrol_wjh @896
+    _Z23m1sdr_SetSamplesPerTickj @897
+    _Z23m1snd_setNoPrefixOnStopv @898
+    _Z23mainevt_sh_bankswitch_wjh @899
+    _Z23mainevt_sh_irqcontrol_wjh @900
+    _Z23salamand_speech_start_wjh @901
+    _Z23sys16_7751_audio_8255_rj @902
+    _Z23sys16_7751_audio_8255_wjh @903
+    _Z23sys16_7751_sh_command_rj @904
+    _Z24adsp2105_set_tx_callbackPFviiE @905
+    _Z24bublbobl_sh_nmi_enable_wjh @906
+    _Z24hotchase_sound_control_wjh @907
+    _Z25bublbobl_sh_nmi_disable_wjh @908
+    _Z25seibu_main_data_pending_rj @909
+    _Z26gunbird_sound_bankswitch_wjh @910
+    _Z26sys16_7751_sh_rom_select_wjh @911
+    _Z28sys16_7751_sh_offset_a0_a3_wjh @912
+    _Z28sys16_7751_sh_offset_a4_a7_wjh @913
+    _Z29sys16_7751_sh_offset_a8_a11_wjh @914
+    _Z2cbi @915
+    _Z31t5182_sharedram_semaphore_snd_rj @916
+    _Z33williams_adpcm_6295_bank_select_wjh @917
+    _Z40t5182_sharedram_semaphore_main_acquire_wjh @918
+    _Z40t5182_sharedram_semaphore_main_release_wjh @919
+    _Z4Playi @920
+    _Z6syslogPcz @921
+    _Z7latch_rj @922
+    _Z7m6522_wjh @923
+    _Z8dcs_initi @924
+    _Z8qs_timeri @925
+    _Z9FetchCodeii @926
+    _Z9cage_initv @927
+    _Z9mx_sres_wjh @928
+    _Z9pgx_timerv @929
+    _dist_code @930 DATA
+    _length_code @931 DATA
+    _tr_align @932
+    _tr_flush_block @933
+    _tr_init @934
+    _tr_stored_block @935
+    _tr_tally @936
+    activecpu_get_reg @937
+    adler32 @938
+    adler32_combine @939
+    adsp2100_execute @940
+    adsp2100_fullcount @941 DATA
+    adsp2100_get_info @942
+    adsp2100_getcycles @943
+    adsp2100_init @944
+    adsp2100_irq_callback @945
+    adsp2100_reset @946
+    adsp2100_yield @947
+    adsp2101_get_info @948
+    adsp2101_reset @949
+    adsp2104_get_info @950
+    adsp2104_load_boot_data @951
+    adsp2104_reset @952
+    adsp2104_set_info @953
+    adsp2104_set_irq_line @954
+    adsp2105_get_info @955
+    adsp2105_load_boot_data @956
+    adsp2105_reset @957
+    adsp2115_get_info @958
+    adsp2115_load_boot_data @959
+    adsp2115_reset @960
+    adsp2115_set_info @961
+    adsp_read16 @962
+    adsp_read32 @963
+    adsp_read8 @964
+    adsp_rom @965 DATA
+    adsp_write16 @966
+    adsp_write32 @967
+    adsp_write8 @968
+    albsong @969 DATA
+    alias_reduction @970
+    alu_op_af @971
+    alu_op_af_const @972
+    alu_op_ar @973
+    alu_op_ar_const @974
+    alu_op_none @975
+    alumac @976
+    append @977 DATA
+    auto_malloc @978
+    ay8910_index_ym @979 DATA
+    bDSoundOkay @980 DATA
+    bDSoundPlaying @981 DATA
+    bclean_bytes @982 DATA
+    boardtype @983 DATA
+    bomberman_decryption_table @984 DATA
+    brd_1942 @985 DATA
+    brd_88games @986 DATA
+    brd_afega @987 DATA
+    brd_airbuster @988 DATA
+    brd_airgallet @989 DATA
+    brd_ajax @990 DATA
+    brd_aliens @991 DATA
+    brd_aquarium @992 DATA
+    brd_argus @993 DATA
+    brd_arkanoid @994 DATA
+    brd_asterix @995 DATA
+    brd_ataris1 @996 DATA
+    brd_ataris2 @997 DATA
+    brd_baraduke @998 DATA
+    brd_bbusters @999 DATA
+    brd_beatmania @1000 DATA
+    brd_bionicc @1001 DATA
+    brd_bjack @1002 DATA
+    brd_bladestl @1003 DATA
+    brd_blantis @1004 DATA
+    brd_blktiger @1005 DATA
+    brd_blzntrnd @1006 DATA
+    brd_bosconian @1007 DATA
+    brd_bottom9 @1008 DATA
+    brd_braveblade @1009 DATA
+    brd_btime @1010 DATA
+    brd_btoads @1011 DATA
+    brd_bubblebobble @1012 DATA
+    brd_buggyboy @1013 DATA
+    brd_cage @1014 DATA
+    brd_capcomcps1 @1015 DATA
+    brd_capcomcps1fw @1016 DATA
+    brd_cbuster @1017 DATA
+    brd_chipsqueak @1018 DATA
+    brd_chqflag @1019 DATA
+    brd_circusc @1020 DATA
+    brd_cischeat @1021 DATA
+    brd_citycon @1022 DATA
+    brd_combatsc @1023 DATA
+    brd_commando @1024 DATA
+    brd_contra @1025 DATA
+    brd_cvsd @1026 DATA
+    brd_daisenpu @1027 DATA
+    brd_darius @1028 DATA
+    brd_dbz2 @1029 DATA
+    brd_dcs @1030 DATA
+    brd_dcs95 @1031 DATA
+    brd_dcsram @1032 DATA
+    brd_ddragon @1033 DATA
+    brd_ddragon2 @1034 DATA
+    brd_ddragon3 @1035 DATA
+    brd_ddribble @1036 DATA
+    brd_dec0 @1037 DATA
+    brd_dec1 @1038 DATA
+    brd_deco32 @1039 DATA
+    brd_deco8 @1040 DATA
+    brd_deniam @1041 DATA
+    brd_devestators @1042 DATA
+    brd_djboy @1043 DATA
+    brd_docastle @1044 DATA
+    brd_dorunrun @1045 DATA
+    brd_dsb @1046 DATA
+    brd_dsbz80 @1047 DATA
+    brd_easttech @1048 DATA
+    brd_endurobl2 @1049 DATA
+    brd_equites @1050 DATA
+    brd_erver1 @1051 DATA
+    brd_erver2 @1052 DATA
+    brd_exzisus @1053 DATA
+    brd_f1gp @1054 DATA
+    brd_f3 @1055 DATA
+    brd_fcombat @1056 DATA
+    brd_fhawk @1057 DATA
+    brd_flower @1058 DATA
+    brd_frogger @1059 DATA
+    brd_fromance @1060 DATA
+    brd_fuukifg3 @1061 DATA
+    brd_gaelco3d @1062 DATA
+    brd_galaga @1063 DATA
+    brd_gauntlet @1064 DATA
+    brd_genesis @1065 DATA
+    brd_gijoe @1066 DATA
+    brd_ginganin @1067 DATA
+    brd_gladiatr @1068 DATA
+    brd_gng @1069 DATA
+    brd_gotts3 @1070 DATA
+    brd_gradius3 @1071 DATA
+    brd_gticlub @1072 DATA
+    brd_gunbird @1073 DATA
+    brd_gx @1074 DATA
+    brd_gx400 @1075 DATA
+    brd_gx400_bubble @1076 DATA
+    brd_gyruss @1077 DATA
+    brd_harddriv @1078 DATA
+    brd_hatchcatch @1079 DATA
+    brd_hatris @1080 DATA
+    brd_hexion @1081 DATA
+    brd_hitice @1082 DATA
+    brd_hornet @1083 DATA
+    brd_hotchase @1084 DATA
+    brd_hotdog @1085 DATA
+    brd_hotrock @1086 DATA
+    brd_hvyunit @1087 DATA
+    brd_hyperduel @1088 DATA
+    brd_ironhors @1089 DATA
+    brd_itech32 @1090 DATA
+    brd_itech32b @1091 DATA
+    brd_jackal @1092 DATA
+    brd_jedi @1093 DATA
+    brd_jsa1_mono_speech @1094 DATA
+    brd_jsa1_stereo @1095 DATA
+    brd_jsa1_swap @1096 DATA
+    brd_jsa2 @1097 DATA
+    brd_jsa3 @1098 DATA
+    brd_jsa3s @1099 DATA
+    brd_jumping @1100 DATA
+    brd_kabukiz @1101 DATA
+    brd_karnov @1102 DATA
+    brd_kikikai @1103 DATA
+    brd_kittenk @1104 DATA
+    brd_konamihcastle @1105 DATA
+    brd_konamitwin16 @1106 DATA
+    brd_kurikint @1107 DATA
+    brd_lastday @1108 DATA
+    brd_lastduel @1109 DATA
+    brd_legion @1110 DATA
+    brd_legionnaire @1111 DATA
+    brd_lemmings @1112 DATA
+    brd_lfighters @1113 DATA
+    brd_lkage @1114 DATA
+    brd_lockon @1115 DATA
+    brd_m62 @1116 DATA
+    brd_m72 @1117 DATA
+    brd_m92 @1118 DATA
+    brd_macross2 @1119 DATA
+    brd_macrossplus @1120 DATA
+    brd_madgear @1121 DATA
+    brd_madmotor @1122 DATA
+    brd_magiccat @1123 DATA
+    brd_mainevt @1124 DATA
+    brd_manybloc @1125 DATA
+    brd_mappy @1126 DATA
+    brd_masterw @1127 DATA
+    brd_mazinger @1128 DATA
+    brd_mechatt @1129 DATA
+    brd_megasys1 @1130 DATA
+    brd_megasys1z80 @1131 DATA
+    brd_mgakuen @1132 DATA
+    brd_midres @1133 DATA
+    brd_mitchell @1134 DATA
+    brd_mnight @1135 DATA
+    brd_momoko @1136 DATA
+    brd_ms32 @1137 DATA
+    brd_msisaac @1138 DATA
+    brd_mx5000 @1139 DATA
+    brd_namcona @1140 DATA
+    brd_namcond1 @1141 DATA
+    brd_namcos1 @1142 DATA
+    brd_namcos2 @1143 DATA
+    brd_namcos21 @1144 DATA
+    brd_namcos21b @1145 DATA
+    brd_namcos86 @1146 DATA
+    brd_narc @1147 DATA
+    brd_neogeo @1148 DATA
+    brd_ninjag @1149 DATA
+    brd_nost @1150 DATA
+    brd_nslash @1151 DATA
+    brd_null @1152 DATA
+    brd_oneshot @1153 DATA
+    brd_overdrive @1154 DATA
+    brd_pacman @1155 DATA
+    brd_panicr @1156 DATA
+    brd_parodius @1157 DATA
+    brd_perfman @1158 DATA
+    brd_pincvsd @1159 DATA
+    brd_pipedrm @1160 DATA
+    brd_pollux @1161 DATA
+    brd_pregx @1162 DATA
+    brd_psychic5 @1163 DATA
+    brd_psychos @1164 DATA
+    brd_punkshot @1165 DATA
+    brd_qsoundcps2 @1166 DATA
+    brd_qsoundzn @1167 DATA
+    brd_raiden @1168 DATA
+    brd_rainbow @1169 DATA
+    brd_raizing @1170 DATA
+    brd_raizing2 @1171 DATA
+    brd_raizing3 @1172 DATA
+    brd_raizing4 @1173 DATA
+    brd_rallyx @1174 DATA
+    brd_rastan @1175 DATA
+    brd_renegade @1176 DATA
+    brd_rollergames @1177 DATA
+    brd_roundup5 @1178 DATA
+    brd_rushcrash @1179 DATA
+    brd_rygar @1180 DATA
+    brd_s1945 @1181 DATA
+    brd_s22 @1182 DATA
+    brd_salamander @1183 DATA
+    brd_scobra @1184 DATA
+    brd_scontra @1185 DATA
+    brd_scsp @1186 DATA
+    brd_scspm3 @1187 DATA
+    brd_segac2 @1188 DATA
+    brd_segadaytona @1189 DATA
+    brd_segagforce @1190 DATA
+    brd_segamodel1 @1191 DATA
+    brd_segamulti32 @1192 DATA
+    brd_segamulti32scross @1193 DATA
+    brd_segamulti32stereo @1194 DATA
+    brd_segaorun @1195 DATA
+    brd_segashang @1196 DATA
+    brd_segasharrier @1197 DATA
+    brd_segasmgp @1198 DATA
+    brd_segasys1 @1199 DATA
+    brd_segasys18 @1200 DATA
+    brd_segasys32 @1201 DATA
+    brd_segatoutrun @1202 DATA
+    brd_seiburai2 @1203 DATA
+    brd_sf1 @1204 DATA
+    brd_sidearms @1205 DATA
+    brd_sidepocket @1206 DATA
+    brd_simpsons @1207 DATA
+    brd_skns @1208 DATA
+    brd_slapfight @1209 DATA
+    brd_slyspy @1210 DATA
+    brd_snk68k @1211 DATA
+    brd_snowbros @1212 DATA
+    brd_sonicwings @1213 DATA
+    brd_spacegun @1214 DATA
+    brd_spi @1215 DATA
+    brd_spy @1216 DATA
+    brd_ss22 @1217 DATA
+    brd_sshanghai @1218 DATA
+    brd_ssio @1219 DATA
+    brd_ssriders @1220 DATA
+    brd_starwars @1221 DATA
+    brd_suna16 @1222 DATA
+    brd_suna16b @1223 DATA
+    brd_superbtime @1224 DATA
+    brd_superslam @1225 DATA
+    brd_system12 @1226 DATA
+    brd_system16 @1227 DATA
+    brd_system16a @1228 DATA
+    brd_system16ano7751 @1229 DATA
+    brd_tail2nose @1230 DATA
+    brd_taito84 @1231 DATA
+    brd_taitof2 @1232 DATA
+    brd_taitof2mono @1233 DATA
+    brd_taitofx1 @1234 DATA
+    brd_taitosj @1235 DATA
+    brd_taitoz @1236 DATA
+    brd_taotaido @1237 DATA
+    brd_tatass @1238 DATA
+    brd_tceptor2 @1239 DATA
+    brd_tecmo @1240 DATA
+    brd_tecmo16 @1241 DATA
+    brd_tecmosys @1242 DATA
+    brd_terrac @1243 DATA
+    brd_terrac2 @1244 DATA
+    brd_terraf @1245 DATA
+    brd_thundercross @1246 DATA
+    brd_thunderv @1247 DATA
+    brd_tigerh @1248 DATA
+    brd_tigerroad @1249 DATA
+    brd_timeplt @1250 DATA
+    brd_tmnt @1251 DATA
+    brd_tnk3 @1252 DATA
+    brd_tnzs @1253 DATA
+    brd_tokio @1254 DATA
+    brd_topspeed @1255 DATA
+    brd_toramich @1256 DATA
+    brd_valtric @1257 DATA
+    brd_volfied @1258 DATA
+    brd_wc90 @1259 DATA
+    brd_weclemans @1260 DATA
+    brd_whitestar @1261 DATA
+    brd_wmsadpcm @1262 DATA
+    brd_xevious @1263 DATA
+    brd_xexex @1264 DATA
+    brd_xmen @1265 DATA
+    brd_xsleena @1266 DATA
+    brd_yunsun @1267 DATA
+    brd_yunsunalt @1268 DATA
+    brd_zerowing @1269 DATA
+    buffer @1270 DATA
+    c352_0_r @1271
+    c352_0_w @1272
+    c352_sh_start @1273
+    c352_sh_stop @1274
+    cage_custom_interface @1275 DATA
+    calculate_t43 @1276
+    callinit @1277 DATA
+    cbUserData @1278 DATA
+    cdrom_parse_toc @1279
+    cem3394_get_parameter @1280
+    cem3394_num @1281
+    cem3394_set_voltage @1282
+    cem3394_sh_start @1283
+    cem3394_sh_stop @1284
+    chd_close @1285
+    chd_close_all @1286
+    chd_compress @1287
+    chd_compress_ex @1288
+    chd_create @1289
+    chd_end_compress_ex @1290
+    chd_get_header @1291
+    chd_get_last_error @1292
+    chd_get_metadata @1293
+    chd_open @1294
+    chd_read @1295
+    chd_save_interface @1296
+    chd_set_header @1297
+    chd_set_interface @1298
+    chd_set_metadata @1299
+    chd_start_compress_ex @1300
+    chd_verify @1301
+    chd_write @1302
+    close_audio @1303
+    cmd1 @1304 DATA
+    cmd_data @1305 DATA
+    cmd_flag @1306 DATA
+    compress @1307
+    compress2 @1308
+    compressBound @1309
+    convert_samplecode @1310
+    cpu_get_pc @1311
+    cpu_getactivecpu @1312
+    cpu_set_irq_line @1313
+    cpu_set_reset_line @1314
+    cpu_setbank @1315
+    cpuintrf_boot @1316
+    cpuintrf_reset @1317
+    cpuintrf_temp_str @1318
+    cpunum_get_reg @1319
+    crc32 @1320
+    crc32_combine @1321
+    csdeluxe_pia_intf @1322 DATA
+    cur_zip_path @1323 DATA
+    curgame @1324 DATA
+    custom_sh_start @1325
+    custom_sh_stop @1326
+    custom_sh_update @1327
+    dac_interface @1328 DATA
+    dasm2100 @1329
+    data @1330 DATA
+    dcs95_rw @1331 DATA
+    dcs_rw @1332 DATA
+    dcsram_rw @1333 DATA
+    debugFlags @1334 DATA
+    debugLookup @1335 DATA
+    debugOptions @1336
+    debugSetup @1337
+    dec32_rw @1338 DATA
+    decodeMPEG @1339
+    decodeMPEGOneFrame @1340
+    decode_huffman_data @1341
+    decode_scalefactors @1342
+    deflate @1343
+    deflateBound @1344
+    deflateCopy @1345
+    deflateEnd @1346
+    deflateInit2_ @1347
+    deflateInit_ @1348
+    deflateParams @1349
+    deflatePrime @1350
+    deflateReset @1351
+    deflateSetDictionary @1352
+    deflateSetHeader @1353
+    deflateTune @1354
+    deflate_copyright @1355 DATA
+    descrambleOn @1356 DATA
+    destroy_chain @1357
+    destroy_mem_chain @1358
+    die @1359
+    dmadac_enable @1360
+    dmadac_set_frequency @1361
+    dmadac_set_volume @1362
+    dmadac_sh_start @1363
+    dmadac_transfer @1364
+    dsoccr94_decryption_table @1365 DATA
+    dummy_getinfo @1366
+    dump @1367
+    dynablaster_decryption_table @1368 DATA
+    f_bdirty @1369 DATA
+    ffwd @1370
+    fillbfr @1371
+    flower_sh_start @1372
+    flower_sh_stop @1373
+    flower_sound1_w @1374
+    flower_sound2_w @1375
+    flower_soundregs1 @1376 DATA
+    flower_soundregs2 @1377 DATA
+    frogger_ay8910_interface @1378 DATA
+    g3d_rw @1379 DATA
+    games @1380 DATA
+    gemsbsrwpat @1381 DATA
+    gemsinit0 @1382 DATA
+    gemsinit1 @1383 DATA
+    gemsinit2 @1384 DATA
+    gemsinit3 @1385 DATA
+    gemsjsrwpat @1386 DATA
+    gemsstart2pat @1387 DATA
+    gemsstart2pat2 @1388 DATA
+    gemsstart2pat3 @1389 DATA
+    gemsstartpat @1390 DATA
+    gemsstartpat2 @1391 DATA
+    gemsstartpat3 @1392 DATA
+    gemsz80pat @1393 DATA
+    gemsz80pat2 @1394 DATA
+    gemsz80pat3 @1395 DATA
+    get_crc_table @1396
+    getbits @1397
+    getcrc @1398
+    gethdr @1399
+    getinfo @1400
+    gunforce_decryption_table @1401 DATA
+    gussun_decryption_table @1402 DATA
+    gzclearerr @1403
+    gzclose @1404
+    gzdirect @1405
+    gzdopen @1406
+    gzeof @1407
+    gzerror @1408
+    gzflush @1409
+    gzgetc @1410
+    gzgets @1411
+    gzopen @1412
+    gzprintf @1413
+    gzputc @1414
+    gzputs @1415
+    gzread @1416
+    gzrewind @1417
+    gzseek @1418
+    gzsetparams @1419
+    gztell @1420
+    gzungetc @1421
+    gzwrite @1422
+    h0 @1423 DATA
+    h1 @1424 DATA
+    h10 @1425 DATA
+    h11 @1426 DATA
+    h12 @1427 DATA
+    h13 @1428 DATA
+    h15 @1429 DATA
+    h16 @1430 DATA
+    h2 @1431 DATA
+    h24 @1432 DATA
+    h3 @1433 DATA
+    h5 @1434 DATA
+    h6 @1435 DATA
+    h6280_ICount @1436 DATA
+    h6280_dasm @1437
+    h6280_execute @1438
+    h6280_exit @1439
+    h6280_fullCount @1440 DATA
+    h6280_get_context @1441
+    h6280_get_reg @1442
+    h6280_getcycles @1443
+    h6280_info @1444
+    h6280_init @1445
+    h6280_read @1446
+    h6280_reset @1447
+    h6280_set_context @1448
+    h6280_set_irq_callback @1449
+    h6280_set_irq_line @1450
+    h6280_set_reg @1451
+    h6280_write @1452
+    h6280_writeport @1453
+    h6280_yield @1454
+    h7 @1455 DATA
+    h8 @1456 DATA
+    h8_3002_InterruptRequest @1457
+    h8_3002_get_info @1458
+    h8_debugger_itu_read8 @1459
+    h8_execute @1460
+    h8_getcycles @1461
+    h8_init @1462
+    h8_io_read8 @1463
+    h8_io_write8 @1464
+    h8_itu_init @1465
+    h8_itu_read8 @1466
+    h8_itu_reset @1467
+    h8_itu_write8 @1468
+    h8_mem_read16 @1469
+    h8_mem_read8 @1470
+    h8_mem_write16 @1471
+    h8_mem_write8 @1472
+    h8_register_read8 @1473
+    h8_register_write8 @1474
+    h8_reset @1475
+    h8_yield @1476
+    h9 @1477 DATA
+    hA @1478 DATA
+    hB @1479 DATA
+    h_cue @1480 DATA
+    hard_disk_close @1481
+    hard_disk_get_chd @1482
+    hard_disk_get_info @1483
+    hard_disk_open @1484
+    hard_disk_read @1485
+    hard_disk_write @1486
+    hc55516_0_clock_clear_w @1487
+    hc55516_0_clock_set_w @1488
+    hc55516_0_clock_w @1489
+    hc55516_0_digit_clock_clear_w @1490
+    hc55516_0_digit_w @1491
+    hc55516_clock_clear_w @1492
+    hc55516_clock_set_w @1493
+    hc55516_clock_w @1494
+    hc55516_digit_clock_clear_w @1495
+    hc55516_digit_w @1496
+    hc55516_sh_start @1497
+    hd6309_ICount @1498 DATA
+    hd6309_dasm @1499
+    hd6309_execute @1500
+    hd6309_exit @1501
+    hd6309_fullCount @1502 DATA
+    hd6309_get_context @1503
+    hd6309_get_reg @1504
+    hd6309_getcycles @1505
+    hd6309_info @1506
+    hd6309_init @1507
+    hd6309_irq_callback @1508
+    hd6309_reset @1509
+    hd6309_set_context @1510
+    hd6309_set_irq_callback @1511
+    hd6309_set_irq_line @1512
+    hd6309_set_reg @1513
+    hd6309_slapstic @1514 DATA
+    hd6309_yield @1515
+    hd63701_dasm @1516
+    hd63701_execute @1517
+    hd63701_exit @1518
+    hd63701_get_context @1519
+    hd63701_get_reg @1520
+    hd63701_getcycles @1521
+    hd63701_info @1522
+    hd63701_init @1523
+    hd63701_internal_registers_r @1524
+    hd63701_internal_registers_w @1525
+    hd63701_reset @1526
+    hd63701_set_context @1527
+    hd63701_set_irq_callback @1528
+    hd63701_set_irq_line @1529
+    hd63701_set_reg @1530
+    hd63701_trap_pc @1531
+    hd63701_yield @1532
+    hook_decryption_table @1533 DATA
+    i8039_ICount @1534 DATA
+    i8039_dasm @1535
+    i8039_execute @1536
+    i8039_exit @1537
+    i8039_fullCount @1538 DATA
+    i8039_get_context @1539
+    i8039_get_reg @1540
+    i8039_getcycles @1541
+    i8039_info @1542
+    i8039_init @1543
+    i8039_reset @1544
+    i8039_set_context @1545
+    i8039_set_irq_callback @1546
+    i8039_set_irq_line @1547
+    i8039_set_reg @1548
+    i8039_yield @1549
+    i8085_ICount @1550 DATA
+    i8085_dasm @1551
+    i8085_execute @1552
+    i8085_exit @1553
+    i8085_fullCount @1554 DATA
+    i8085_get_context @1555
+    i8085_get_reg @1556
+    i8085_getcycles @1557
+    i8085_info @1558
+    i8085_init @1559
+    i8085_reset @1560
+    i8085_set_INTR @1561
+    i8085_set_RST55 @1562
+    i8085_set_RST65 @1563
+    i8085_set_RST75 @1564
+    i8085_set_SID @1565
+    i8085_set_TRAP @1566
+    i8085_set_context @1567
+    i8085_set_irq_callback @1568
+    i8085_set_irq_line @1569
+    i8085_set_reg @1570
+    i8085_set_sod_callback @1571
+    i8085_yield @1572
+    imdct @1573
+    imdct_init @1574
+    in_file @1575 DATA
+    inflate @1576
+    inflateBack @1577
+    inflateBackEnd @1578
+    inflateBackInit_ @1579
+    inflateCopy @1580
+    inflateEnd @1581
+    inflateGetHeader @1582
+    inflateInit2_ @1583
+    inflateInit_ @1584
+    inflatePrime @1585
+    inflateReset @1586
+    inflateSetDictionary @1587
+    inflateSync @1588
+    inflateSyncPoint @1589
+    inflate_copyright @1590 DATA
+    inflate_fast @1591
+    inflate_table @1592
+    initialise_decoder @1593
+    initialise_globals @1594
+    intensity_scale @1595 DATA
+    intf @1596 DATA
+    inthunt_decryption_table @1597 DATA
+    irem_ay8910_interface @1598 DATA
+    irem_msm5205_interface @1599 DATA
+    iremga20_clock @1600
+    is @1601 DATA
+    is_max @1602 DATA
+    k005289_control_A_w @1603
+    k005289_control_B_w @1604
+    k005289_keylatch_A_w @1605
+    k005289_keylatch_B_w @1606
+    k005289_pitch_A_w @1607
+    k005289_pitch_B_w @1608
+    lang @1609 DATA
+    last_read @1610 DATA
+    lastbnk @1611 DATA
+    layer2_frame @1612
+    layer3_frame @1613
+    ldw @1614 DATA
+    leagueman_decryption_table @1615 DATA
+    lethalth_decryption_table @1616 DATA
+    logerror @1617
+    lpDS @1618 DATA
+    lpPDSB @1619 DATA
+    lpSecB @1620 DATA
+    m1feof @1621
+    m1fread @1622
+    m1fseek @1623
+    m1sdr_Callback @1624 DATA
+    m1setfile @1625
+    m1snd_add32031 @1626
+    m1snd_add37710 @1627
+    m1snd_add6280 @1628
+    m1snd_add6309 @1629
+    m1snd_add63701 @1630
+    m1snd_add6502 @1631
+    m1snd_add6502b @1632
+    m1snd_add65c02 @1633
+    m1snd_add6803 @1634
+    m1snd_add6808 @1635
+    m1snd_add6809 @1636
+    m1snd_add6809b @1637
+    m1snd_add68k @1638
+    m1snd_add7751 @1639
+    m1snd_add8039 @1640
+    m1snd_add8085 @1641
+    m1snd_addadsp2104 @1642
+    m1snd_addadsp2105 @1643
+    m1snd_addadsp2115 @1644
+    m1snd_addh83002 @1645
+    m1snd_addv30 @1646
+    m1snd_addz80 @1647
+    m1snd_do_frame @1648
+    m1snd_getCurBoard @1649
+    m1snd_get_custom_tag @1650
+    m1snd_get_custom_tag_value @1651
+    m1snd_get_info_int @1652
+    m1snd_get_info_str @1653
+    m1snd_get_info_str_ex @1654
+    m1snd_init @1655
+    m1snd_initNormalizeState @1656
+    m1snd_resetSilenceCount @1657
+    m1snd_run @1658
+    m1snd_setPostVolume @1659
+    m1snd_set_info_int @1660
+    m1snd_set_info_str @1661
+    m1snd_setm6809irq @1662
+    m1snd_setoption @1663
+    m1snd_shutdown @1664
+    m1snd_update_dsps @1665
+    m1ui_message @1666 DATA
+    m1ui_this @1667 DATA
+    m37710_ICount @1668 DATA
+    m37710_dasm @1669
+    m37710_execute @1670
+    m37710_exit @1671
+    m37710_fullCount @1672 DATA
+    m37710_get_context @1673
+    m37710_get_pc @1674
+    m37710_get_reg @1675
+    m37710_get_sp @1676
+    m37710_getcycles @1677
+    m37710_init @1678
+    m37710_internal_r @1679
+    m37710_internal_w @1680
+    m37710_irq_levels @1681 DATA
+    m37710_read @1682
+    m37710_read16 @1683
+    m37710_reset @1684
+    m37710_set_context @1685
+    m37710_set_irq_callback @1686
+    m37710_set_irq_line @1687
+    m37710_set_pc @1688
+    m37710_set_reg @1689
+    m37710_set_sp @1690
+    m37710_state_load @1691
+    m37710_state_save @1692
+    m37710_write @1693
+    m37710_write16 @1694
+    m37710_yield @1695
+    m37710i_cpu @1696 DATA
+    m37710i_destination @1697 DATA
+    m37710i_execute @1698 DATA
+    m37710i_execute_M0X0 @1699
+    m37710i_execute_M0X1 @1700
+    m37710i_execute_M1X0 @1701
+    m37710i_execute_M1X1 @1702
+    m37710i_get_reg @1703 DATA
+    m37710i_get_reg_M0X0 @1704
+    m37710i_get_reg_M0X1 @1705
+    m37710i_get_reg_M1X0 @1706
+    m37710i_get_reg_M1X1 @1707
+    m37710i_opcodes @1708 DATA
+    m37710i_opcodes2 @1709 DATA
+    m37710i_opcodes3 @1710 DATA
+    m37710i_opcodes42_M0X0 @1711 DATA
+    m37710i_opcodes42_M0X1 @1712 DATA
+    m37710i_opcodes42_M1X0 @1713 DATA
+    m37710i_opcodes42_M1X1 @1714 DATA
+    m37710i_opcodes89_M0X0 @1715 DATA
+    m37710i_opcodes89_M0X1 @1716 DATA
+    m37710i_opcodes89_M1X0 @1717 DATA
+    m37710i_opcodes89_M1X1 @1718 DATA
+    m37710i_opcodes_M0X0 @1719 DATA
+    m37710i_opcodes_M0X1 @1720 DATA
+    m37710i_opcodes_M1X0 @1721 DATA
+    m37710i_opcodes_M1X1 @1722 DATA
+    m37710i_set_line @1723 DATA
+    m37710i_set_line_M0X0 @1724
+    m37710i_set_line_M0X1 @1725
+    m37710i_set_line_M1X0 @1726
+    m37710i_set_line_M1X1 @1727
+    m37710i_set_reg @1728 DATA
+    m37710i_set_reg_M0X0 @1729
+    m37710i_set_reg_M0X1 @1730
+    m37710i_set_reg_M1X0 @1731
+    m37710i_set_reg_M1X1 @1732
+    m37710i_source @1733 DATA
+    m37710i_update_irqs @1734
+    m6502_ICount @1735 DATA
+    m6502_dasm @1736
+    m6502_execute @1737
+    m6502_exit @1738
+    m6502_fullCount @1739 DATA
+    m6502_get_context @1740
+    m6502_get_reg @1741
+    m6502_getcycles @1742
+    m6502_info @1743
+    m6502_init @1744
+    m6502_irq_callback @1745
+    m6502_read @1746
+    m6502_readop @1747
+    m6502_reset @1748
+    m6502_set_context @1749
+    m6502_set_irq_callback @1750
+    m6502_set_irq_line @1751
+    m6502_set_reg @1752
+    m6502_write @1753
+    m6502_yield @1754
+    m65c02_dasm @1755
+    m65c02_execute @1756
+    m65c02_exit @1757
+    m65c02_get_context @1758
+    m65c02_get_reg @1759
+    m65c02_info @1760
+    m65c02_init @1761
+    m65c02_reset @1762
+    m65c02_set_context @1763
+    m65c02_set_irq_callback @1764
+    m65c02_set_irq_line @1765
+    m65c02_set_reg @1766
+    m6800_ICount @1767 DATA
+    m6800_dasm @1768
+    m6800_execute @1769
+    m6800_exit @1770
+    m6800_fullCount @1771 DATA
+    m6800_get_context @1772
+    m6800_get_reg @1773
+    m6800_info @1774
+    m6800_init @1775
+    m6800_irq_callback @1776
+    m6800_read @1777
+    m6800_readport @1778
+    m6800_reset @1779
+    m6800_set_context @1780
+    m6800_set_irq_callback @1781
+    m6800_set_irq_line @1782
+    m6800_set_reg @1783
+    m6800_write @1784
+    m6800_writeport @1785
+    m6803_dasm @1786
+    m6803_execute @1787
+    m6803_exit @1788
+    m6803_get_context @1789
+    m6803_get_reg @1790
+    m6803_getcycles @1791
+    m6803_info @1792
+    m6803_init @1793
+    m6803_internal_registers_r @1794
+    m6803_internal_registers_w @1795
+    m6803_reset @1796
+    m6803_set_context @1797
+    m6803_set_irq_callback @1798
+    m6803_set_irq_line @1799
+    m6803_set_reg @1800
+    m6803_yield @1801
+    m68040_fpu_op0 @1802
+    m68040_fpu_op1 @1803
+    m6808_dasm @1804
+    m6808_execute @1805
+    m6808_exit @1806
+    m6808_get_context @1807
+    m6808_get_reg @1808
+    m6808_info @1809
+    m6808_init @1810
+    m6808_reset @1811
+    m6808_set_context @1812
+    m6808_set_irq_callback @1813
+    m6808_set_irq_line @1814
+    m6808_set_reg @1815
+    m6809_ICount @1816 DATA
+    m6809_dasm @1817
+    m6809_execute @1818
+    m6809_exit @1819
+    m6809_fullCount @1820 DATA
+    m6809_get_context @1821
+    m6809_get_reg @1822
+    m6809_getcycles @1823
+    m6809_info @1824
+    m6809_init @1825
+    m6809_irq_callback @1826
+    m6809_read @1827
+    m6809_reset @1828
+    m6809_set_context @1829
+    m6809_set_irq_callback @1830
+    m6809_set_irq_line @1831
+    m6809_set_reg @1832
+    m6809_slapstic @1833 DATA
+    m6809_write @1834
+    m6809_yield @1835
+    m68k_context_size @1836
+    m68k_cycles_remaining @1837
+    m68k_cycles_run @1838
+    m68k_end_timeslice @1839
+    m68k_execute @1840
+    m68k_get_context @1841
+    m68k_get_reg @1842
+    m68k_init @1843
+    m68k_modify_timeslice @1844
+    m68k_op_040fpu0_32 @1845
+    m68k_op_040fpu1_32 @1846
+    m68k_op_1010 @1847
+    m68k_op_1111 @1848
+    m68k_op_abcd_8_mm @1849
+    m68k_op_abcd_8_mm_ax7 @1850
+    m68k_op_abcd_8_mm_axy7 @1851
+    m68k_op_abcd_8_mm_ay7 @1852
+    m68k_op_abcd_8_rr @1853
+    m68k_op_add_16_er_a @1854
+    m68k_op_add_16_er_ai @1855
+    m68k_op_add_16_er_al @1856
+    m68k_op_add_16_er_aw @1857
+    m68k_op_add_16_er_d @1858
+    m68k_op_add_16_er_di @1859
+    m68k_op_add_16_er_i @1860
+    m68k_op_add_16_er_ix @1861
+    m68k_op_add_16_er_pcdi @1862
+    m68k_op_add_16_er_pcix @1863
+    m68k_op_add_16_er_pd @1864
+    m68k_op_add_16_er_pi @1865
+    m68k_op_add_16_re_ai @1866
+    m68k_op_add_16_re_al @1867
+    m68k_op_add_16_re_aw @1868
+    m68k_op_add_16_re_di @1869
+    m68k_op_add_16_re_ix @1870
+    m68k_op_add_16_re_pd @1871
+    m68k_op_add_16_re_pi @1872
+    m68k_op_add_32_er_a @1873
+    m68k_op_add_32_er_ai @1874
+    m68k_op_add_32_er_al @1875
+    m68k_op_add_32_er_aw @1876
+    m68k_op_add_32_er_d @1877
+    m68k_op_add_32_er_di @1878
+    m68k_op_add_32_er_i @1879
+    m68k_op_add_32_er_ix @1880
+    m68k_op_add_32_er_pcdi @1881
+    m68k_op_add_32_er_pcix @1882
+    m68k_op_add_32_er_pd @1883
+    m68k_op_add_32_er_pi @1884
+    m68k_op_add_32_re_ai @1885
+    m68k_op_add_32_re_al @1886
+    m68k_op_add_32_re_aw @1887
+    m68k_op_add_32_re_di @1888
+    m68k_op_add_32_re_ix @1889
+    m68k_op_add_32_re_pd @1890
+    m68k_op_add_32_re_pi @1891
+    m68k_op_add_8_er_ai @1892
+    m68k_op_add_8_er_al @1893
+    m68k_op_add_8_er_aw @1894
+    m68k_op_add_8_er_d @1895
+    m68k_op_add_8_er_di @1896
+    m68k_op_add_8_er_i @1897
+    m68k_op_add_8_er_ix @1898
+    m68k_op_add_8_er_pcdi @1899
+    m68k_op_add_8_er_pcix @1900
+    m68k_op_add_8_er_pd @1901
+    m68k_op_add_8_er_pd7 @1902
+    m68k_op_add_8_er_pi @1903
+    m68k_op_add_8_er_pi7 @1904
+    m68k_op_add_8_re_ai @1905
+    m68k_op_add_8_re_al @1906
+    m68k_op_add_8_re_aw @1907
+    m68k_op_add_8_re_di @1908
+    m68k_op_add_8_re_ix @1909
+    m68k_op_add_8_re_pd @1910
+    m68k_op_add_8_re_pd7 @1911
+    m68k_op_add_8_re_pi @1912
+    m68k_op_add_8_re_pi7 @1913
+    m68k_op_adda_16_a @1914
+    m68k_op_adda_16_ai @1915
+    m68k_op_adda_16_al @1916
+    m68k_op_adda_16_aw @1917
+    m68k_op_adda_16_d @1918
+    m68k_op_adda_16_di @1919
+    m68k_op_adda_16_i @1920
+    m68k_op_adda_16_ix @1921
+    m68k_op_adda_16_pcdi @1922
+    m68k_op_adda_16_pcix @1923
+    m68k_op_adda_16_pd @1924
+    m68k_op_adda_16_pi @1925
+    m68k_op_adda_32_a @1926
+    m68k_op_adda_32_ai @1927
+    m68k_op_adda_32_al @1928
+    m68k_op_adda_32_aw @1929
+    m68k_op_adda_32_d @1930
+    m68k_op_adda_32_di @1931
+    m68k_op_adda_32_i @1932
+    m68k_op_adda_32_ix @1933
+    m68k_op_adda_32_pcdi @1934
+    m68k_op_adda_32_pcix @1935
+    m68k_op_adda_32_pd @1936
+    m68k_op_adda_32_pi @1937
+    m68k_op_addi_16_ai @1938
+    m68k_op_addi_16_al @1939
+    m68k_op_addi_16_aw @1940
+    m68k_op_addi_16_d @1941
+    m68k_op_addi_16_di @1942
+    m68k_op_addi_16_ix @1943
+    m68k_op_addi_16_pd @1944
+    m68k_op_addi_16_pi @1945
+    m68k_op_addi_32_ai @1946
+    m68k_op_addi_32_al @1947
+    m68k_op_addi_32_aw @1948
+    m68k_op_addi_32_d @1949
+    m68k_op_addi_32_di @1950
+    m68k_op_addi_32_ix @1951
+    m68k_op_addi_32_pd @1952
+    m68k_op_addi_32_pi @1953
+    m68k_op_addi_8_ai @1954
+    m68k_op_addi_8_al @1955
+    m68k_op_addi_8_aw @1956
+    m68k_op_addi_8_d @1957
+    m68k_op_addi_8_di @1958
+    m68k_op_addi_8_ix @1959
+    m68k_op_addi_8_pd @1960
+    m68k_op_addi_8_pd7 @1961
+    m68k_op_addi_8_pi @1962
+    m68k_op_addi_8_pi7 @1963
+    m68k_op_addq_16_a @1964
+    m68k_op_addq_16_ai @1965
+    m68k_op_addq_16_al @1966
+    m68k_op_addq_16_aw @1967
+    m68k_op_addq_16_d @1968
+    m68k_op_addq_16_di @1969
+    m68k_op_addq_16_ix @1970
+    m68k_op_addq_16_pd @1971
+    m68k_op_addq_16_pi @1972
+    m68k_op_addq_32_a @1973
+    m68k_op_addq_32_ai @1974
+    m68k_op_addq_32_al @1975
+    m68k_op_addq_32_aw @1976
+    m68k_op_addq_32_d @1977
+    m68k_op_addq_32_di @1978
+    m68k_op_addq_32_ix @1979
+    m68k_op_addq_32_pd @1980
+    m68k_op_addq_32_pi @1981
+    m68k_op_addq_8_ai @1982
+    m68k_op_addq_8_al @1983
+    m68k_op_addq_8_aw @1984
+    m68k_op_addq_8_d @1985
+    m68k_op_addq_8_di @1986
+    m68k_op_addq_8_ix @1987
+    m68k_op_addq_8_pd @1988
+    m68k_op_addq_8_pd7 @1989
+    m68k_op_addq_8_pi @1990
+    m68k_op_addq_8_pi7 @1991
+    m68k_op_addx_16_mm @1992
+    m68k_op_addx_16_rr @1993
+    m68k_op_addx_32_mm @1994
+    m68k_op_addx_32_rr @1995
+    m68k_op_addx_8_mm @1996
+    m68k_op_addx_8_mm_ax7 @1997
+    m68k_op_addx_8_mm_axy7 @1998
+    m68k_op_addx_8_mm_ay7 @1999
+    m68k_op_addx_8_rr @2000
+    m68k_op_and_16_er_ai @2001
+    m68k_op_and_16_er_al @2002
+    m68k_op_and_16_er_aw @2003
+    m68k_op_and_16_er_d @2004
+    m68k_op_and_16_er_di @2005
+    m68k_op_and_16_er_i @2006
+    m68k_op_and_16_er_ix @2007
+    m68k_op_and_16_er_pcdi @2008
+    m68k_op_and_16_er_pcix @2009
+    m68k_op_and_16_er_pd @2010
+    m68k_op_and_16_er_pi @2011
+    m68k_op_and_16_re_ai @2012
+    m68k_op_and_16_re_al @2013
+    m68k_op_and_16_re_aw @2014
+    m68k_op_and_16_re_di @2015
+    m68k_op_and_16_re_ix @2016
+    m68k_op_and_16_re_pd @2017
+    m68k_op_and_16_re_pi @2018
+    m68k_op_and_32_er_ai @2019
+    m68k_op_and_32_er_al @2020
+    m68k_op_and_32_er_aw @2021
+    m68k_op_and_32_er_d @2022
+    m68k_op_and_32_er_di @2023
+    m68k_op_and_32_er_i @2024
+    m68k_op_and_32_er_ix @2025
+    m68k_op_and_32_er_pcdi @2026
+    m68k_op_and_32_er_pcix @2027
+    m68k_op_and_32_er_pd @2028
+    m68k_op_and_32_er_pi @2029
+    m68k_op_and_32_re_ai @2030
+    m68k_op_and_32_re_al @2031
+    m68k_op_and_32_re_aw @2032
+    m68k_op_and_32_re_di @2033
+    m68k_op_and_32_re_ix @2034
+    m68k_op_and_32_re_pd @2035
+    m68k_op_and_32_re_pi @2036
+    m68k_op_and_8_er_ai @2037
+    m68k_op_and_8_er_al @2038
+    m68k_op_and_8_er_aw @2039
+    m68k_op_and_8_er_d @2040
+    m68k_op_and_8_er_di @2041
+    m68k_op_and_8_er_i @2042
+    m68k_op_and_8_er_ix @2043
+    m68k_op_and_8_er_pcdi @2044
+    m68k_op_and_8_er_pcix @2045
+    m68k_op_and_8_er_pd @2046
+    m68k_op_and_8_er_pd7 @2047
+    m68k_op_and_8_er_pi @2048
+    m68k_op_and_8_er_pi7 @2049
+    m68k_op_and_8_re_ai @2050
+    m68k_op_and_8_re_al @2051
+    m68k_op_and_8_re_aw @2052
+    m68k_op_and_8_re_di @2053
+    m68k_op_and_8_re_ix @2054
+    m68k_op_and_8_re_pd @2055
+    m68k_op_and_8_re_pd7 @2056
+    m68k_op_and_8_re_pi @2057
+    m68k_op_and_8_re_pi7 @2058
+    m68k_op_andi_16_ai @2059
+    m68k_op_andi_16_al @2060
+    m68k_op_andi_16_aw @2061
+    m68k_op_andi_16_d @2062
+    m68k_op_andi_16_di @2063
+    m68k_op_andi_16_ix @2064
+    m68k_op_andi_16_pd @2065
+    m68k_op_andi_16_pi @2066
+    m68k_op_andi_16_toc @2067
+    m68k_op_andi_16_tos @2068
+    m68k_op_andi_32_ai @2069
+    m68k_op_andi_32_al @2070
+    m68k_op_andi_32_aw @2071
+    m68k_op_andi_32_d @2072
+    m68k_op_andi_32_di @2073
+    m68k_op_andi_32_ix @2074
+    m68k_op_andi_32_pd @2075
+    m68k_op_andi_32_pi @2076
+    m68k_op_andi_8_ai @2077
+    m68k_op_andi_8_al @2078
+    m68k_op_andi_8_aw @2079
+    m68k_op_andi_8_d @2080
+    m68k_op_andi_8_di @2081
+    m68k_op_andi_8_ix @2082
+    m68k_op_andi_8_pd @2083
+    m68k_op_andi_8_pd7 @2084
+    m68k_op_andi_8_pi @2085
+    m68k_op_andi_8_pi7 @2086
+    m68k_op_asl_16_ai @2087
+    m68k_op_asl_16_al @2088
+    m68k_op_asl_16_aw @2089
+    m68k_op_asl_16_di @2090
+    m68k_op_asl_16_ix @2091
+    m68k_op_asl_16_pd @2092
+    m68k_op_asl_16_pi @2093
+    m68k_op_asl_16_r @2094
+    m68k_op_asl_16_s @2095
+    m68k_op_asl_32_r @2096
+    m68k_op_asl_32_s @2097
+    m68k_op_asl_8_r @2098
+    m68k_op_asl_8_s @2099
+    m68k_op_asr_16_ai @2100
+    m68k_op_asr_16_al @2101
+    m68k_op_asr_16_aw @2102
+    m68k_op_asr_16_di @2103
+    m68k_op_asr_16_ix @2104
+    m68k_op_asr_16_pd @2105
+    m68k_op_asr_16_pi @2106
+    m68k_op_asr_16_r @2107
+    m68k_op_asr_16_s @2108
+    m68k_op_asr_32_r @2109
+    m68k_op_asr_32_s @2110
+    m68k_op_asr_8_r @2111
+    m68k_op_asr_8_s @2112
+    m68k_op_bcc_16 @2113
+    m68k_op_bcc_32 @2114
+    m68k_op_bcc_8 @2115
+    m68k_op_bchg_32_r_d @2116
+    m68k_op_bchg_32_s_d @2117
+    m68k_op_bchg_8_r_ai @2118
+    m68k_op_bchg_8_r_al @2119
+    m68k_op_bchg_8_r_aw @2120
+    m68k_op_bchg_8_r_di @2121
+    m68k_op_bchg_8_r_ix @2122
+    m68k_op_bchg_8_r_pd @2123
+    m68k_op_bchg_8_r_pd7 @2124
+    m68k_op_bchg_8_r_pi @2125
+    m68k_op_bchg_8_r_pi7 @2126
+    m68k_op_bchg_8_s_ai @2127
+    m68k_op_bchg_8_s_al @2128
+    m68k_op_bchg_8_s_aw @2129
+    m68k_op_bchg_8_s_di @2130
+    m68k_op_bchg_8_s_ix @2131
+    m68k_op_bchg_8_s_pd @2132
+    m68k_op_bchg_8_s_pd7 @2133
+    m68k_op_bchg_8_s_pi @2134
+    m68k_op_bchg_8_s_pi7 @2135
+    m68k_op_bclr_32_r_d @2136
+    m68k_op_bclr_32_s_d @2137
+    m68k_op_bclr_8_r_ai @2138
+    m68k_op_bclr_8_r_al @2139
+    m68k_op_bclr_8_r_aw @2140
+    m68k_op_bclr_8_r_di @2141
+    m68k_op_bclr_8_r_ix @2142
+    m68k_op_bclr_8_r_pd @2143
+    m68k_op_bclr_8_r_pd7 @2144
+    m68k_op_bclr_8_r_pi @2145
+    m68k_op_bclr_8_r_pi7 @2146
+    m68k_op_bclr_8_s_ai @2147
+    m68k_op_bclr_8_s_al @2148
+    m68k_op_bclr_8_s_aw @2149
+    m68k_op_bclr_8_s_di @2150
+    m68k_op_bclr_8_s_ix @2151
+    m68k_op_bclr_8_s_pd @2152
+    m68k_op_bclr_8_s_pd7 @2153
+    m68k_op_bclr_8_s_pi @2154
+    m68k_op_bclr_8_s_pi7 @2155
+    m68k_op_bcs_16 @2156
+    m68k_op_bcs_32 @2157
+    m68k_op_bcs_8 @2158
+    m68k_op_beq_16 @2159
+    m68k_op_beq_32 @2160
+    m68k_op_beq_8 @2161
+    m68k_op_bfchg_32_ai @2162
+    m68k_op_bfchg_32_al @2163
+    m68k_op_bfchg_32_aw @2164
+    m68k_op_bfchg_32_d @2165
+    m68k_op_bfchg_32_di @2166
+    m68k_op_bfchg_32_ix @2167
+    m68k_op_bfclr_32_ai @2168
+    m68k_op_bfclr_32_al @2169
+    m68k_op_bfclr_32_aw @2170
+    m68k_op_bfclr_32_d @2171
+    m68k_op_bfclr_32_di @2172
+    m68k_op_bfclr_32_ix @2173
+    m68k_op_bfexts_32_ai @2174
+    m68k_op_bfexts_32_al @2175
+    m68k_op_bfexts_32_aw @2176
+    m68k_op_bfexts_32_d @2177
+    m68k_op_bfexts_32_di @2178
+    m68k_op_bfexts_32_ix @2179
+    m68k_op_bfexts_32_pcdi @2180
+    m68k_op_bfexts_32_pcix @2181
+    m68k_op_bfextu_32_ai @2182
+    m68k_op_bfextu_32_al @2183
+    m68k_op_bfextu_32_aw @2184
+    m68k_op_bfextu_32_d @2185
+    m68k_op_bfextu_32_di @2186
+    m68k_op_bfextu_32_ix @2187
+    m68k_op_bfextu_32_pcdi @2188
+    m68k_op_bfextu_32_pcix @2189
+    m68k_op_bfffo_32_ai @2190
+    m68k_op_bfffo_32_al @2191
+    m68k_op_bfffo_32_aw @2192
+    m68k_op_bfffo_32_d @2193
+    m68k_op_bfffo_32_di @2194
+    m68k_op_bfffo_32_ix @2195
+    m68k_op_bfffo_32_pcdi @2196
+    m68k_op_bfffo_32_pcix @2197
+    m68k_op_bfins_32_ai @2198
+    m68k_op_bfins_32_al @2199
+    m68k_op_bfins_32_aw @2200
+    m68k_op_bfins_32_d @2201
+    m68k_op_bfins_32_di @2202
+    m68k_op_bfins_32_ix @2203
+    m68k_op_bfset_32_ai @2204
+    m68k_op_bfset_32_al @2205
+    m68k_op_bfset_32_aw @2206
+    m68k_op_bfset_32_d @2207
+    m68k_op_bfset_32_di @2208
+    m68k_op_bfset_32_ix @2209
+    m68k_op_bftst_32_ai @2210
+    m68k_op_bftst_32_al @2211
+    m68k_op_bftst_32_aw @2212
+    m68k_op_bftst_32_d @2213
+    m68k_op_bftst_32_di @2214
+    m68k_op_bftst_32_ix @2215
+    m68k_op_bftst_32_pcdi @2216
+    m68k_op_bftst_32_pcix @2217
+    m68k_op_bge_16 @2218
+    m68k_op_bge_32 @2219
+    m68k_op_bge_8 @2220
+    m68k_op_bgt_16 @2221
+    m68k_op_bgt_32 @2222
+    m68k_op_bgt_8 @2223
+    m68k_op_bhi_16 @2224
+    m68k_op_bhi_32 @2225
+    m68k_op_bhi_8 @2226
+    m68k_op_bkpt @2227
+    m68k_op_ble_16 @2228
+    m68k_op_ble_32 @2229
+    m68k_op_ble_8 @2230
+    m68k_op_bls_16 @2231
+    m68k_op_bls_32 @2232
+    m68k_op_bls_8 @2233
+    m68k_op_blt_16 @2234
+    m68k_op_blt_32 @2235
+    m68k_op_blt_8 @2236
+    m68k_op_bmi_16 @2237
+    m68k_op_bmi_32 @2238
+    m68k_op_bmi_8 @2239
+    m68k_op_bne_16 @2240
+    m68k_op_bne_32 @2241
+    m68k_op_bne_8 @2242
+    m68k_op_bpl_16 @2243
+    m68k_op_bpl_32 @2244
+    m68k_op_bpl_8 @2245
+    m68k_op_bra_16 @2246
+    m68k_op_bra_32 @2247
+    m68k_op_bra_8 @2248
+    m68k_op_bset_32_r_d @2249
+    m68k_op_bset_32_s_d @2250
+    m68k_op_bset_8_r_ai @2251
+    m68k_op_bset_8_r_al @2252
+    m68k_op_bset_8_r_aw @2253
+    m68k_op_bset_8_r_di @2254
+    m68k_op_bset_8_r_ix @2255
+    m68k_op_bset_8_r_pd @2256
+    m68k_op_bset_8_r_pd7 @2257
+    m68k_op_bset_8_r_pi @2258
+    m68k_op_bset_8_r_pi7 @2259
+    m68k_op_bset_8_s_ai @2260
+    m68k_op_bset_8_s_al @2261
+    m68k_op_bset_8_s_aw @2262
+    m68k_op_bset_8_s_di @2263
+    m68k_op_bset_8_s_ix @2264
+    m68k_op_bset_8_s_pd @2265
+    m68k_op_bset_8_s_pd7 @2266
+    m68k_op_bset_8_s_pi @2267
+    m68k_op_bset_8_s_pi7 @2268
+    m68k_op_bsr_16 @2269
+    m68k_op_bsr_32 @2270
+    m68k_op_bsr_8 @2271
+    m68k_op_btst_32_r_d @2272
+    m68k_op_btst_32_s_d @2273
+    m68k_op_btst_8_r_ai @2274
+    m68k_op_btst_8_r_al @2275
+    m68k_op_btst_8_r_aw @2276
+    m68k_op_btst_8_r_di @2277
+    m68k_op_btst_8_r_i @2278
+    m68k_op_btst_8_r_ix @2279
+    m68k_op_btst_8_r_pcdi @2280
+    m68k_op_btst_8_r_pcix @2281
+    m68k_op_btst_8_r_pd @2282
+    m68k_op_btst_8_r_pd7 @2283
+    m68k_op_btst_8_r_pi @2284
+    m68k_op_btst_8_r_pi7 @2285
+    m68k_op_btst_8_s_ai @2286
+    m68k_op_btst_8_s_al @2287
+    m68k_op_btst_8_s_aw @2288
+    m68k_op_btst_8_s_di @2289
+    m68k_op_btst_8_s_ix @2290
+    m68k_op_btst_8_s_pcdi @2291
+    m68k_op_btst_8_s_pcix @2292
+    m68k_op_btst_8_s_pd @2293
+    m68k_op_btst_8_s_pd7 @2294
+    m68k_op_btst_8_s_pi @2295
+    m68k_op_btst_8_s_pi7 @2296
+    m68k_op_bvc_16 @2297
+    m68k_op_bvc_32 @2298
+    m68k_op_bvc_8 @2299
+    m68k_op_bvs_16 @2300
+    m68k_op_bvs_32 @2301
+    m68k_op_bvs_8 @2302
+    m68k_op_callm_32_ai @2303
+    m68k_op_callm_32_al @2304
+    m68k_op_callm_32_aw @2305
+    m68k_op_callm_32_di @2306
+    m68k_op_callm_32_ix @2307
+    m68k_op_callm_32_pcdi @2308
+    m68k_op_callm_32_pcix @2309
+    m68k_op_cas2_16 @2310
+    m68k_op_cas2_32 @2311
+    m68k_op_cas_16_ai @2312
+    m68k_op_cas_16_al @2313
+    m68k_op_cas_16_aw @2314
+    m68k_op_cas_16_di @2315
+    m68k_op_cas_16_ix @2316
+    m68k_op_cas_16_pd @2317
+    m68k_op_cas_16_pi @2318
+    m68k_op_cas_32_ai @2319
+    m68k_op_cas_32_al @2320
+    m68k_op_cas_32_aw @2321
+    m68k_op_cas_32_di @2322
+    m68k_op_cas_32_ix @2323
+    m68k_op_cas_32_pd @2324
+    m68k_op_cas_32_pi @2325
+    m68k_op_cas_8_ai @2326
+    m68k_op_cas_8_al @2327
+    m68k_op_cas_8_aw @2328
+    m68k_op_cas_8_di @2329
+    m68k_op_cas_8_ix @2330
+    m68k_op_cas_8_pd @2331
+    m68k_op_cas_8_pd7 @2332
+    m68k_op_cas_8_pi @2333
+    m68k_op_cas_8_pi7 @2334
+    m68k_op_chk2cmp2_16_ai @2335
+    m68k_op_chk2cmp2_16_al @2336
+    m68k_op_chk2cmp2_16_aw @2337
+    m68k_op_chk2cmp2_16_di @2338
+    m68k_op_chk2cmp2_16_ix @2339
+    m68k_op_chk2cmp2_16_pcdi @2340
+    m68k_op_chk2cmp2_16_pcix @2341
+    m68k_op_chk2cmp2_32_ai @2342
+    m68k_op_chk2cmp2_32_al @2343
+    m68k_op_chk2cmp2_32_aw @2344
+    m68k_op_chk2cmp2_32_di @2345
+    m68k_op_chk2cmp2_32_ix @2346
+    m68k_op_chk2cmp2_32_pcdi @2347
+    m68k_op_chk2cmp2_32_pcix @2348
+    m68k_op_chk2cmp2_8_ai @2349
+    m68k_op_chk2cmp2_8_al @2350
+    m68k_op_chk2cmp2_8_aw @2351
+    m68k_op_chk2cmp2_8_di @2352
+    m68k_op_chk2cmp2_8_ix @2353
+    m68k_op_chk2cmp2_8_pcdi @2354
+    m68k_op_chk2cmp2_8_pcix @2355
+    m68k_op_chk_16_ai @2356
+    m68k_op_chk_16_al @2357
+    m68k_op_chk_16_aw @2358
+    m68k_op_chk_16_d @2359
+    m68k_op_chk_16_di @2360
+    m68k_op_chk_16_i @2361
+    m68k_op_chk_16_ix @2362
+    m68k_op_chk_16_pcdi @2363
+    m68k_op_chk_16_pcix @2364
+    m68k_op_chk_16_pd @2365
+    m68k_op_chk_16_pi @2366
+    m68k_op_chk_32_ai @2367
+    m68k_op_chk_32_al @2368
+    m68k_op_chk_32_aw @2369
+    m68k_op_chk_32_d @2370
+    m68k_op_chk_32_di @2371
+    m68k_op_chk_32_i @2372
+    m68k_op_chk_32_ix @2373
+    m68k_op_chk_32_pcdi @2374
+    m68k_op_chk_32_pcix @2375
+    m68k_op_chk_32_pd @2376
+    m68k_op_chk_32_pi @2377
+    m68k_op_clr_16_ai @2378
+    m68k_op_clr_16_al @2379
+    m68k_op_clr_16_aw @2380
+    m68k_op_clr_16_d @2381
+    m68k_op_clr_16_di @2382
+    m68k_op_clr_16_ix @2383
+    m68k_op_clr_16_pd @2384
+    m68k_op_clr_16_pi @2385
+    m68k_op_clr_32_ai @2386
+    m68k_op_clr_32_al @2387
+    m68k_op_clr_32_aw @2388
+    m68k_op_clr_32_d @2389
+    m68k_op_clr_32_di @2390
+    m68k_op_clr_32_ix @2391
+    m68k_op_clr_32_pd @2392
+    m68k_op_clr_32_pi @2393
+    m68k_op_clr_8_ai @2394
+    m68k_op_clr_8_al @2395
+    m68k_op_clr_8_aw @2396
+    m68k_op_clr_8_d @2397
+    m68k_op_clr_8_di @2398
+    m68k_op_clr_8_ix @2399
+    m68k_op_clr_8_pd @2400
+    m68k_op_clr_8_pd7 @2401
+    m68k_op_clr_8_pi @2402
+    m68k_op_clr_8_pi7 @2403
+    m68k_op_cmp_16_a @2404
+    m68k_op_cmp_16_ai @2405
+    m68k_op_cmp_16_al @2406
+    m68k_op_cmp_16_aw @2407
+    m68k_op_cmp_16_d @2408
+    m68k_op_cmp_16_di @2409
+    m68k_op_cmp_16_i @2410
+    m68k_op_cmp_16_ix @2411
+    m68k_op_cmp_16_pcdi @2412
+    m68k_op_cmp_16_pcix @2413
+    m68k_op_cmp_16_pd @2414
+    m68k_op_cmp_16_pi @2415
+    m68k_op_cmp_32_a @2416
+    m68k_op_cmp_32_ai @2417
+    m68k_op_cmp_32_al @2418
+    m68k_op_cmp_32_aw @2419
+    m68k_op_cmp_32_d @2420
+    m68k_op_cmp_32_di @2421
+    m68k_op_cmp_32_i @2422
+    m68k_op_cmp_32_ix @2423
+    m68k_op_cmp_32_pcdi @2424
+    m68k_op_cmp_32_pcix @2425
+    m68k_op_cmp_32_pd @2426
+    m68k_op_cmp_32_pi @2427
+    m68k_op_cmp_8_ai @2428
+    m68k_op_cmp_8_al @2429
+    m68k_op_cmp_8_aw @2430
+    m68k_op_cmp_8_d @2431
+    m68k_op_cmp_8_di @2432
+    m68k_op_cmp_8_i @2433
+    m68k_op_cmp_8_ix @2434
+    m68k_op_cmp_8_pcdi @2435
+    m68k_op_cmp_8_pcix @2436
+    m68k_op_cmp_8_pd @2437
+    m68k_op_cmp_8_pd7 @2438
+    m68k_op_cmp_8_pi @2439
+    m68k_op_cmp_8_pi7 @2440
+    m68k_op_cmpa_16_a @2441
+    m68k_op_cmpa_16_ai @2442
+    m68k_op_cmpa_16_al @2443
+    m68k_op_cmpa_16_aw @2444
+    m68k_op_cmpa_16_d @2445
+    m68k_op_cmpa_16_di @2446
+    m68k_op_cmpa_16_i @2447
+    m68k_op_cmpa_16_ix @2448
+    m68k_op_cmpa_16_pcdi @2449
+    m68k_op_cmpa_16_pcix @2450
+    m68k_op_cmpa_16_pd @2451
+    m68k_op_cmpa_16_pi @2452
+    m68k_op_cmpa_32_a @2453
+    m68k_op_cmpa_32_ai @2454
+    m68k_op_cmpa_32_al @2455
+    m68k_op_cmpa_32_aw @2456
+    m68k_op_cmpa_32_d @2457
+    m68k_op_cmpa_32_di @2458
+    m68k_op_cmpa_32_i @2459
+    m68k_op_cmpa_32_ix @2460
+    m68k_op_cmpa_32_pcdi @2461
+    m68k_op_cmpa_32_pcix @2462
+    m68k_op_cmpa_32_pd @2463
+    m68k_op_cmpa_32_pi @2464
+    m68k_op_cmpi_16_ai @2465
+    m68k_op_cmpi_16_al @2466
+    m68k_op_cmpi_16_aw @2467
+    m68k_op_cmpi_16_d @2468
+    m68k_op_cmpi_16_di @2469
+    m68k_op_cmpi_16_ix @2470
+    m68k_op_cmpi_16_pcdi @2471
+    m68k_op_cmpi_16_pcix @2472
+    m68k_op_cmpi_16_pd @2473
+    m68k_op_cmpi_16_pi @2474
+    m68k_op_cmpi_32_ai @2475
+    m68k_op_cmpi_32_al @2476
+    m68k_op_cmpi_32_aw @2477
+    m68k_op_cmpi_32_d @2478
+    m68k_op_cmpi_32_di @2479
+    m68k_op_cmpi_32_ix @2480
+    m68k_op_cmpi_32_pcdi @2481
+    m68k_op_cmpi_32_pcix @2482
+    m68k_op_cmpi_32_pd @2483
+    m68k_op_cmpi_32_pi @2484
+    m68k_op_cmpi_8_ai @2485
+    m68k_op_cmpi_8_al @2486
+    m68k_op_cmpi_8_aw @2487
+    m68k_op_cmpi_8_d @2488
+    m68k_op_cmpi_8_di @2489
+    m68k_op_cmpi_8_ix @2490
+    m68k_op_cmpi_8_pcdi @2491
+    m68k_op_cmpi_8_pcix @2492
+    m68k_op_cmpi_8_pd @2493
+    m68k_op_cmpi_8_pd7 @2494
+    m68k_op_cmpi_8_pi @2495
+    m68k_op_cmpi_8_pi7 @2496
+    m68k_op_cmpm_16 @2497
+    m68k_op_cmpm_32 @2498
+    m68k_op_cmpm_8 @2499
+    m68k_op_cmpm_8_ax7 @2500
+    m68k_op_cmpm_8_axy7 @2501
+    m68k_op_cmpm_8_ay7 @2502
+    m68k_op_cpbcc_32 @2503
+    m68k_op_cpdbcc_32 @2504
+    m68k_op_cpgen_32 @2505
+    m68k_op_cpscc_32 @2506
+    m68k_op_cptrapcc_32 @2507
+    m68k_op_dbcc_16 @2508
+    m68k_op_dbcs_16 @2509
+    m68k_op_dbeq_16 @2510
+    m68k_op_dbf_16 @2511
+    m68k_op_dbge_16 @2512
+    m68k_op_dbgt_16 @2513
+    m68k_op_dbhi_16 @2514
+    m68k_op_dble_16 @2515
+    m68k_op_dbls_16 @2516
+    m68k_op_dblt_16 @2517
+    m68k_op_dbmi_16 @2518
+    m68k_op_dbne_16 @2519
+    m68k_op_dbpl_16 @2520
+    m68k_op_dbt_16 @2521
+    m68k_op_dbvc_16 @2522
+    m68k_op_dbvs_16 @2523
+    m68k_op_divl_32_ai @2524
+    m68k_op_divl_32_al @2525
+    m68k_op_divl_32_aw @2526
+    m68k_op_divl_32_d @2527
+    m68k_op_divl_32_di @2528
+    m68k_op_divl_32_i @2529
+    m68k_op_divl_32_ix @2530
+    m68k_op_divl_32_pcdi @2531
+    m68k_op_divl_32_pcix @2532
+    m68k_op_divl_32_pd @2533
+    m68k_op_divl_32_pi @2534
+    m68k_op_divs_16_ai @2535
+    m68k_op_divs_16_al @2536
+    m68k_op_divs_16_aw @2537
+    m68k_op_divs_16_d @2538
+    m68k_op_divs_16_di @2539
+    m68k_op_divs_16_i @2540
+    m68k_op_divs_16_ix @2541
+    m68k_op_divs_16_pcdi @2542
+    m68k_op_divs_16_pcix @2543
+    m68k_op_divs_16_pd @2544
+    m68k_op_divs_16_pi @2545
+    m68k_op_divu_16_ai @2546
+    m68k_op_divu_16_al @2547
+    m68k_op_divu_16_aw @2548
+    m68k_op_divu_16_d @2549
+    m68k_op_divu_16_di @2550
+    m68k_op_divu_16_i @2551
+    m68k_op_divu_16_ix @2552
+    m68k_op_divu_16_pcdi @2553
+    m68k_op_divu_16_pcix @2554
+    m68k_op_divu_16_pd @2555
+    m68k_op_divu_16_pi @2556
+    m68k_op_eor_16_ai @2557
+    m68k_op_eor_16_al @2558
+    m68k_op_eor_16_aw @2559
+    m68k_op_eor_16_d @2560
+    m68k_op_eor_16_di @2561
+    m68k_op_eor_16_ix @2562
+    m68k_op_eor_16_pd @2563
+    m68k_op_eor_16_pi @2564
+    m68k_op_eor_32_ai @2565
+    m68k_op_eor_32_al @2566
+    m68k_op_eor_32_aw @2567
+    m68k_op_eor_32_d @2568
+    m68k_op_eor_32_di @2569
+    m68k_op_eor_32_ix @2570
+    m68k_op_eor_32_pd @2571
+    m68k_op_eor_32_pi @2572
+    m68k_op_eor_8_ai @2573
+    m68k_op_eor_8_al @2574
+    m68k_op_eor_8_aw @2575
+    m68k_op_eor_8_d @2576
+    m68k_op_eor_8_di @2577
+    m68k_op_eor_8_ix @2578
+    m68k_op_eor_8_pd @2579
+    m68k_op_eor_8_pd7 @2580
+    m68k_op_eor_8_pi @2581
+    m68k_op_eor_8_pi7 @2582
+    m68k_op_eori_16_ai @2583
+    m68k_op_eori_16_al @2584
+    m68k_op_eori_16_aw @2585
+    m68k_op_eori_16_d @2586
+    m68k_op_eori_16_di @2587
+    m68k_op_eori_16_ix @2588
+    m68k_op_eori_16_pd @2589
+    m68k_op_eori_16_pi @2590
+    m68k_op_eori_16_toc @2591
+    m68k_op_eori_16_tos @2592
+    m68k_op_eori_32_ai @2593
+    m68k_op_eori_32_al @2594
+    m68k_op_eori_32_aw @2595
+    m68k_op_eori_32_d @2596
+    m68k_op_eori_32_di @2597
+    m68k_op_eori_32_ix @2598
+    m68k_op_eori_32_pd @2599
+    m68k_op_eori_32_pi @2600
+    m68k_op_eori_8_ai @2601
+    m68k_op_eori_8_al @2602
+    m68k_op_eori_8_aw @2603
+    m68k_op_eori_8_d @2604
+    m68k_op_eori_8_di @2605
+    m68k_op_eori_8_ix @2606
+    m68k_op_eori_8_pd @2607
+    m68k_op_eori_8_pd7 @2608
+    m68k_op_eori_8_pi @2609
+    m68k_op_eori_8_pi7 @2610
+    m68k_op_exg_32_aa @2611
+    m68k_op_exg_32_da @2612
+    m68k_op_exg_32_dd @2613
+    m68k_op_ext_16 @2614
+    m68k_op_ext_32 @2615
+    m68k_op_extb_32 @2616
+    m68k_op_illegal @2617
+    m68k_op_jmp_32_ai @2618
+    m68k_op_jmp_32_al @2619
+    m68k_op_jmp_32_aw @2620
+    m68k_op_jmp_32_di @2621
+    m68k_op_jmp_32_ix @2622
+    m68k_op_jmp_32_pcdi @2623
+    m68k_op_jmp_32_pcix @2624
+    m68k_op_jsr_32_ai @2625
+    m68k_op_jsr_32_al @2626
+    m68k_op_jsr_32_aw @2627
+    m68k_op_jsr_32_di @2628
+    m68k_op_jsr_32_ix @2629
+    m68k_op_jsr_32_pcdi @2630
+    m68k_op_jsr_32_pcix @2631
+    m68k_op_lea_32_ai @2632
+    m68k_op_lea_32_al @2633
+    m68k_op_lea_32_aw @2634
+    m68k_op_lea_32_di @2635
+    m68k_op_lea_32_ix @2636
+    m68k_op_lea_32_pcdi @2637
+    m68k_op_lea_32_pcix @2638
+    m68k_op_link_16 @2639
+    m68k_op_link_16_a7 @2640
+    m68k_op_link_32 @2641
+    m68k_op_link_32_a7 @2642
+    m68k_op_lsl_16_ai @2643
+    m68k_op_lsl_16_al @2644
+    m68k_op_lsl_16_aw @2645
+    m68k_op_lsl_16_di @2646
+    m68k_op_lsl_16_ix @2647
+    m68k_op_lsl_16_pd @2648
+    m68k_op_lsl_16_pi @2649
+    m68k_op_lsl_16_r @2650
+    m68k_op_lsl_16_s @2651
+    m68k_op_lsl_32_r @2652
+    m68k_op_lsl_32_s @2653
+    m68k_op_lsl_8_r @2654
+    m68k_op_lsl_8_s @2655
+    m68k_op_lsr_16_ai @2656
+    m68k_op_lsr_16_al @2657
+    m68k_op_lsr_16_aw @2658
+    m68k_op_lsr_16_di @2659
+    m68k_op_lsr_16_ix @2660
+    m68k_op_lsr_16_pd @2661
+    m68k_op_lsr_16_pi @2662
+    m68k_op_lsr_16_r @2663
+    m68k_op_lsr_16_s @2664
+    m68k_op_lsr_32_r @2665
+    m68k_op_lsr_32_s @2666
+    m68k_op_lsr_8_r @2667
+    m68k_op_lsr_8_s @2668
+    m68k_op_move16_32 @2669
+    m68k_op_move_16_ai_a @2670
+    m68k_op_move_16_ai_ai @2671
+    m68k_op_move_16_ai_al @2672
+    m68k_op_move_16_ai_aw @2673
+    m68k_op_move_16_ai_d @2674
+    m68k_op_move_16_ai_di @2675
+    m68k_op_move_16_ai_i @2676
+    m68k_op_move_16_ai_ix @2677
+    m68k_op_move_16_ai_pcdi @2678
+    m68k_op_move_16_ai_pcix @2679
+    m68k_op_move_16_ai_pd @2680
+    m68k_op_move_16_ai_pi @2681
+    m68k_op_move_16_al_a @2682
+    m68k_op_move_16_al_ai @2683
+    m68k_op_move_16_al_al @2684
+    m68k_op_move_16_al_aw @2685
+    m68k_op_move_16_al_d @2686
+    m68k_op_move_16_al_di @2687
+    m68k_op_move_16_al_i @2688
+    m68k_op_move_16_al_ix @2689
+    m68k_op_move_16_al_pcdi @2690
+    m68k_op_move_16_al_pcix @2691
+    m68k_op_move_16_al_pd @2692
+    m68k_op_move_16_al_pi @2693
+    m68k_op_move_16_aw_a @2694
+    m68k_op_move_16_aw_ai @2695
+    m68k_op_move_16_aw_al @2696
+    m68k_op_move_16_aw_aw @2697
+    m68k_op_move_16_aw_d @2698
+    m68k_op_move_16_aw_di @2699
+    m68k_op_move_16_aw_i @2700
+    m68k_op_move_16_aw_ix @2701
+    m68k_op_move_16_aw_pcdi @2702
+    m68k_op_move_16_aw_pcix @2703
+    m68k_op_move_16_aw_pd @2704
+    m68k_op_move_16_aw_pi @2705
+    m68k_op_move_16_d_a @2706
+    m68k_op_move_16_d_ai @2707
+    m68k_op_move_16_d_al @2708
+    m68k_op_move_16_d_aw @2709
+    m68k_op_move_16_d_d @2710
+    m68k_op_move_16_d_di @2711
+    m68k_op_move_16_d_i @2712
+    m68k_op_move_16_d_ix @2713
+    m68k_op_move_16_d_pcdi @2714
+    m68k_op_move_16_d_pcix @2715
+    m68k_op_move_16_d_pd @2716
+    m68k_op_move_16_d_pi @2717
+    m68k_op_move_16_di_a @2718
+    m68k_op_move_16_di_ai @2719
+    m68k_op_move_16_di_al @2720
+    m68k_op_move_16_di_aw @2721
+    m68k_op_move_16_di_d @2722
+    m68k_op_move_16_di_di @2723
+    m68k_op_move_16_di_i @2724
+    m68k_op_move_16_di_ix @2725
+    m68k_op_move_16_di_pcdi @2726
+    m68k_op_move_16_di_pcix @2727
+    m68k_op_move_16_di_pd @2728
+    m68k_op_move_16_di_pi @2729
+    m68k_op_move_16_frc_ai @2730
+    m68k_op_move_16_frc_al @2731
+    m68k_op_move_16_frc_aw @2732
+    m68k_op_move_16_frc_d @2733
+    m68k_op_move_16_frc_di @2734
+    m68k_op_move_16_frc_ix @2735
+    m68k_op_move_16_frc_pd @2736
+    m68k_op_move_16_frc_pi @2737
+    m68k_op_move_16_frs_ai @2738
+    m68k_op_move_16_frs_al @2739
+    m68k_op_move_16_frs_aw @2740
+    m68k_op_move_16_frs_d @2741
+    m68k_op_move_16_frs_di @2742
+    m68k_op_move_16_frs_ix @2743
+    m68k_op_move_16_frs_pd @2744
+    m68k_op_move_16_frs_pi @2745
+    m68k_op_move_16_ix_a @2746
+    m68k_op_move_16_ix_ai @2747
+    m68k_op_move_16_ix_al @2748
+    m68k_op_move_16_ix_aw @2749
+    m68k_op_move_16_ix_d @2750
+    m68k_op_move_16_ix_di @2751
+    m68k_op_move_16_ix_i @2752
+    m68k_op_move_16_ix_ix @2753
+    m68k_op_move_16_ix_pcdi @2754
+    m68k_op_move_16_ix_pcix @2755
+    m68k_op_move_16_ix_pd @2756
+    m68k_op_move_16_ix_pi @2757
+    m68k_op_move_16_pd_a @2758
+    m68k_op_move_16_pd_ai @2759
+    m68k_op_move_16_pd_al @2760
+    m68k_op_move_16_pd_aw @2761
+    m68k_op_move_16_pd_d @2762
+    m68k_op_move_16_pd_di @2763
+    m68k_op_move_16_pd_i @2764
+    m68k_op_move_16_pd_ix @2765
+    m68k_op_move_16_pd_pcdi @2766
+    m68k_op_move_16_pd_pcix @2767
+    m68k_op_move_16_pd_pd @2768
+    m68k_op_move_16_pd_pi @2769
+    m68k_op_move_16_pi_a @2770
+    m68k_op_move_16_pi_ai @2771
+    m68k_op_move_16_pi_al @2772
+    m68k_op_move_16_pi_aw @2773
+    m68k_op_move_16_pi_d @2774
+    m68k_op_move_16_pi_di @2775
+    m68k_op_move_16_pi_i @2776
+    m68k_op_move_16_pi_ix @2777
+    m68k_op_move_16_pi_pcdi @2778
+    m68k_op_move_16_pi_pcix @2779
+    m68k_op_move_16_pi_pd @2780
+    m68k_op_move_16_pi_pi @2781
+    m68k_op_move_16_toc_ai @2782
+    m68k_op_move_16_toc_al @2783
+    m68k_op_move_16_toc_aw @2784
+    m68k_op_move_16_toc_d @2785
+    m68k_op_move_16_toc_di @2786
+    m68k_op_move_16_toc_i @2787
+    m68k_op_move_16_toc_ix @2788
+    m68k_op_move_16_toc_pcdi @2789
+    m68k_op_move_16_toc_pcix @2790
+    m68k_op_move_16_toc_pd @2791
+    m68k_op_move_16_toc_pi @2792
+    m68k_op_move_16_tos_ai @2793
+    m68k_op_move_16_tos_al @2794
+    m68k_op_move_16_tos_aw @2795
+    m68k_op_move_16_tos_d @2796
+    m68k_op_move_16_tos_di @2797
+    m68k_op_move_16_tos_i @2798
+    m68k_op_move_16_tos_ix @2799
+    m68k_op_move_16_tos_pcdi @2800
+    m68k_op_move_16_tos_pcix @2801
+    m68k_op_move_16_tos_pd @2802
+    m68k_op_move_16_tos_pi @2803
+    m68k_op_move_32_ai_a @2804
+    m68k_op_move_32_ai_ai @2805
+    m68k_op_move_32_ai_al @2806
+    m68k_op_move_32_ai_aw @2807
+    m68k_op_move_32_ai_d @2808
+    m68k_op_move_32_ai_di @2809
+    m68k_op_move_32_ai_i @2810
+    m68k_op_move_32_ai_ix @2811
+    m68k_op_move_32_ai_pcdi @2812
+    m68k_op_move_32_ai_pcix @2813
+    m68k_op_move_32_ai_pd @2814
+    m68k_op_move_32_ai_pi @2815
+    m68k_op_move_32_al_a @2816
+    m68k_op_move_32_al_ai @2817
+    m68k_op_move_32_al_al @2818
+    m68k_op_move_32_al_aw @2819
+    m68k_op_move_32_al_d @2820
+    m68k_op_move_32_al_di @2821
+    m68k_op_move_32_al_i @2822
+    m68k_op_move_32_al_ix @2823
+    m68k_op_move_32_al_pcdi @2824
+    m68k_op_move_32_al_pcix @2825
+    m68k_op_move_32_al_pd @2826
+    m68k_op_move_32_al_pi @2827
+    m68k_op_move_32_aw_a @2828
+    m68k_op_move_32_aw_ai @2829
+    m68k_op_move_32_aw_al @2830
+    m68k_op_move_32_aw_aw @2831
+    m68k_op_move_32_aw_d @2832
+    m68k_op_move_32_aw_di @2833
+    m68k_op_move_32_aw_i @2834
+    m68k_op_move_32_aw_ix @2835
+    m68k_op_move_32_aw_pcdi @2836
+    m68k_op_move_32_aw_pcix @2837
+    m68k_op_move_32_aw_pd @2838
+    m68k_op_move_32_aw_pi @2839
+    m68k_op_move_32_d_a @2840
+    m68k_op_move_32_d_ai @2841
+    m68k_op_move_32_d_al @2842
+    m68k_op_move_32_d_aw @2843
+    m68k_op_move_32_d_d @2844
+    m68k_op_move_32_d_di @2845
+    m68k_op_move_32_d_i @2846
+    m68k_op_move_32_d_ix @2847
+    m68k_op_move_32_d_pcdi @2848
+    m68k_op_move_32_d_pcix @2849
+    m68k_op_move_32_d_pd @2850
+    m68k_op_move_32_d_pi @2851
+    m68k_op_move_32_di_a @2852
+    m68k_op_move_32_di_ai @2853
+    m68k_op_move_32_di_al @2854
+    m68k_op_move_32_di_aw @2855
+    m68k_op_move_32_di_d @2856
+    m68k_op_move_32_di_di @2857
+    m68k_op_move_32_di_i @2858
+    m68k_op_move_32_di_ix @2859
+    m68k_op_move_32_di_pcdi @2860
+    m68k_op_move_32_di_pcix @2861
+    m68k_op_move_32_di_pd @2862
+    m68k_op_move_32_di_pi @2863
+    m68k_op_move_32_fru @2864
+    m68k_op_move_32_ix_a @2865
+    m68k_op_move_32_ix_ai @2866
+    m68k_op_move_32_ix_al @2867
+    m68k_op_move_32_ix_aw @2868
+    m68k_op_move_32_ix_d @2869
+    m68k_op_move_32_ix_di @2870
+    m68k_op_move_32_ix_i @2871
+    m68k_op_move_32_ix_ix @2872
+    m68k_op_move_32_ix_pcdi @2873
+    m68k_op_move_32_ix_pcix @2874
+    m68k_op_move_32_ix_pd @2875
+    m68k_op_move_32_ix_pi @2876
+    m68k_op_move_32_pd_a @2877
+    m68k_op_move_32_pd_ai @2878
+    m68k_op_move_32_pd_al @2879
+    m68k_op_move_32_pd_aw @2880
+    m68k_op_move_32_pd_d @2881
+    m68k_op_move_32_pd_di @2882
+    m68k_op_move_32_pd_i @2883
+    m68k_op_move_32_pd_ix @2884
+    m68k_op_move_32_pd_pcdi @2885
+    m68k_op_move_32_pd_pcix @2886
+    m68k_op_move_32_pd_pd @2887
+    m68k_op_move_32_pd_pi @2888
+    m68k_op_move_32_pi_a @2889
+    m68k_op_move_32_pi_ai @2890
+    m68k_op_move_32_pi_al @2891
+    m68k_op_move_32_pi_aw @2892
+    m68k_op_move_32_pi_d @2893
+    m68k_op_move_32_pi_di @2894
+    m68k_op_move_32_pi_i @2895
+    m68k_op_move_32_pi_ix @2896
+    m68k_op_move_32_pi_pcdi @2897
+    m68k_op_move_32_pi_pcix @2898
+    m68k_op_move_32_pi_pd @2899
+    m68k_op_move_32_pi_pi @2900
+    m68k_op_move_32_tou @2901
+    m68k_op_move_8_ai_ai @2902
+    m68k_op_move_8_ai_al @2903
+    m68k_op_move_8_ai_aw @2904
+    m68k_op_move_8_ai_d @2905
+    m68k_op_move_8_ai_di @2906
+    m68k_op_move_8_ai_i @2907
+    m68k_op_move_8_ai_ix @2908
+    m68k_op_move_8_ai_pcdi @2909
+    m68k_op_move_8_ai_pcix @2910
+    m68k_op_move_8_ai_pd @2911
+    m68k_op_move_8_ai_pd7 @2912
+    m68k_op_move_8_ai_pi @2913
+    m68k_op_move_8_ai_pi7 @2914
+    m68k_op_move_8_al_ai @2915
+    m68k_op_move_8_al_al @2916
+    m68k_op_move_8_al_aw @2917
+    m68k_op_move_8_al_d @2918
+    m68k_op_move_8_al_di @2919
+    m68k_op_move_8_al_i @2920
+    m68k_op_move_8_al_ix @2921
+    m68k_op_move_8_al_pcdi @2922
+    m68k_op_move_8_al_pcix @2923
+    m68k_op_move_8_al_pd @2924
+    m68k_op_move_8_al_pd7 @2925
+    m68k_op_move_8_al_pi @2926
+    m68k_op_move_8_al_pi7 @2927
+    m68k_op_move_8_aw_ai @2928
+    m68k_op_move_8_aw_al @2929
+    m68k_op_move_8_aw_aw @2930
+    m68k_op_move_8_aw_d @2931
+    m68k_op_move_8_aw_di @2932
+    m68k_op_move_8_aw_i @2933
+    m68k_op_move_8_aw_ix @2934
+    m68k_op_move_8_aw_pcdi @2935
+    m68k_op_move_8_aw_pcix @2936
+    m68k_op_move_8_aw_pd @2937
+    m68k_op_move_8_aw_pd7 @2938
+    m68k_op_move_8_aw_pi @2939
+    m68k_op_move_8_aw_pi7 @2940
+    m68k_op_move_8_d_ai @2941
+    m68k_op_move_8_d_al @2942
+    m68k_op_move_8_d_aw @2943
+    m68k_op_move_8_d_d @2944
+    m68k_op_move_8_d_di @2945
+    m68k_op_move_8_d_i @2946
+    m68k_op_move_8_d_ix @2947
+    m68k_op_move_8_d_pcdi @2948
+    m68k_op_move_8_d_pcix @2949
+    m68k_op_move_8_d_pd @2950
+    m68k_op_move_8_d_pd7 @2951
+    m68k_op_move_8_d_pi @2952
+    m68k_op_move_8_d_pi7 @2953
+    m68k_op_move_8_di_ai @2954
+    m68k_op_move_8_di_al @2955
+    m68k_op_move_8_di_aw @2956
+    m68k_op_move_8_di_d @2957
+    m68k_op_move_8_di_di @2958
+    m68k_op_move_8_di_i @2959
+    m68k_op_move_8_di_ix @2960
+    m68k_op_move_8_di_pcdi @2961
+    m68k_op_move_8_di_pcix @2962
+    m68k_op_move_8_di_pd @2963
+    m68k_op_move_8_di_pd7 @2964
+    m68k_op_move_8_di_pi @2965
+    m68k_op_move_8_di_pi7 @2966
+    m68k_op_move_8_ix_ai @2967
+    m68k_op_move_8_ix_al @2968
+    m68k_op_move_8_ix_aw @2969
+    m68k_op_move_8_ix_d @2970
+    m68k_op_move_8_ix_di @2971
+    m68k_op_move_8_ix_i @2972
+    m68k_op_move_8_ix_ix @2973
+    m68k_op_move_8_ix_pcdi @2974
+    m68k_op_move_8_ix_pcix @2975
+    m68k_op_move_8_ix_pd @2976
+    m68k_op_move_8_ix_pd7 @2977
+    m68k_op_move_8_ix_pi @2978
+    m68k_op_move_8_ix_pi7 @2979
+    m68k_op_move_8_pd7_ai @2980
+    m68k_op_move_8_pd7_al @2981
+    m68k_op_move_8_pd7_aw @2982
+    m68k_op_move_8_pd7_d @2983
+    m68k_op_move_8_pd7_di @2984
+    m68k_op_move_8_pd7_i @2985
+    m68k_op_move_8_pd7_ix @2986
+    m68k_op_move_8_pd7_pcdi @2987
+    m68k_op_move_8_pd7_pcix @2988
+    m68k_op_move_8_pd7_pd @2989
+    m68k_op_move_8_pd7_pd7 @2990
+    m68k_op_move_8_pd7_pi @2991
+    m68k_op_move_8_pd7_pi7 @2992
+    m68k_op_move_8_pd_ai @2993
+    m68k_op_move_8_pd_al @2994
+    m68k_op_move_8_pd_aw @2995
+    m68k_op_move_8_pd_d @2996
+    m68k_op_move_8_pd_di @2997
+    m68k_op_move_8_pd_i @2998
+    m68k_op_move_8_pd_ix @2999
+    m68k_op_move_8_pd_pcdi @3000
+    m68k_op_move_8_pd_pcix @3001
+    m68k_op_move_8_pd_pd @3002
+    m68k_op_move_8_pd_pd7 @3003
+    m68k_op_move_8_pd_pi @3004
+    m68k_op_move_8_pd_pi7 @3005
+    m68k_op_move_8_pi7_ai @3006
+    m68k_op_move_8_pi7_al @3007
+    m68k_op_move_8_pi7_aw @3008
+    m68k_op_move_8_pi7_d @3009
+    m68k_op_move_8_pi7_di @3010
+    m68k_op_move_8_pi7_i @3011
+    m68k_op_move_8_pi7_ix @3012
+    m68k_op_move_8_pi7_pcdi @3013
+    m68k_op_move_8_pi7_pcix @3014
+    m68k_op_move_8_pi7_pd @3015
+    m68k_op_move_8_pi7_pd7 @3016
+    m68k_op_move_8_pi7_pi @3017
+    m68k_op_move_8_pi7_pi7 @3018
+    m68k_op_move_8_pi_ai @3019
+    m68k_op_move_8_pi_al @3020
+    m68k_op_move_8_pi_aw @3021
+    m68k_op_move_8_pi_d @3022
+    m68k_op_move_8_pi_di @3023
+    m68k_op_move_8_pi_i @3024
+    m68k_op_move_8_pi_ix @3025
+    m68k_op_move_8_pi_pcdi @3026
+    m68k_op_move_8_pi_pcix @3027
+    m68k_op_move_8_pi_pd @3028
+    m68k_op_move_8_pi_pd7 @3029
+    m68k_op_move_8_pi_pi @3030
+    m68k_op_move_8_pi_pi7 @3031
+    m68k_op_movea_16_a @3032
+    m68k_op_movea_16_ai @3033
+    m68k_op_movea_16_al @3034
+    m68k_op_movea_16_aw @3035
+    m68k_op_movea_16_d @3036
+    m68k_op_movea_16_di @3037
+    m68k_op_movea_16_i @3038
+    m68k_op_movea_16_ix @3039
+    m68k_op_movea_16_pcdi @3040
+    m68k_op_movea_16_pcix @3041
+    m68k_op_movea_16_pd @3042
+    m68k_op_movea_16_pi @3043
+    m68k_op_movea_32_a @3044
+    m68k_op_movea_32_ai @3045
+    m68k_op_movea_32_al @3046
+    m68k_op_movea_32_aw @3047
+    m68k_op_movea_32_d @3048
+    m68k_op_movea_32_di @3049
+    m68k_op_movea_32_i @3050
+    m68k_op_movea_32_ix @3051
+    m68k_op_movea_32_pcdi @3052
+    m68k_op_movea_32_pcix @3053
+    m68k_op_movea_32_pd @3054
+    m68k_op_movea_32_pi @3055
+    m68k_op_movec_32_cr @3056
+    m68k_op_movec_32_rc @3057
+    m68k_op_movem_16_er_ai @3058
+    m68k_op_movem_16_er_al @3059
+    m68k_op_movem_16_er_aw @3060
+    m68k_op_movem_16_er_di @3061
+    m68k_op_movem_16_er_ix @3062
+    m68k_op_movem_16_er_pcdi @3063
+    m68k_op_movem_16_er_pcix @3064
+    m68k_op_movem_16_er_pi @3065
+    m68k_op_movem_16_re_ai @3066
+    m68k_op_movem_16_re_al @3067
+    m68k_op_movem_16_re_aw @3068
+    m68k_op_movem_16_re_di @3069
+    m68k_op_movem_16_re_ix @3070
+    m68k_op_movem_16_re_pd @3071
+    m68k_op_movem_32_er_ai @3072
+    m68k_op_movem_32_er_al @3073
+    m68k_op_movem_32_er_aw @3074
+    m68k_op_movem_32_er_di @3075
+    m68k_op_movem_32_er_ix @3076
+    m68k_op_movem_32_er_pcdi @3077
+    m68k_op_movem_32_er_pcix @3078
+    m68k_op_movem_32_er_pi @3079
+    m68k_op_movem_32_re_ai @3080
+    m68k_op_movem_32_re_al @3081
+    m68k_op_movem_32_re_aw @3082
+    m68k_op_movem_32_re_di @3083
+    m68k_op_movem_32_re_ix @3084
+    m68k_op_movem_32_re_pd @3085
+    m68k_op_movep_16_er @3086
+    m68k_op_movep_16_re @3087
+    m68k_op_movep_32_er @3088
+    m68k_op_movep_32_re @3089
+    m68k_op_moveq_32 @3090
+    m68k_op_moves_16_ai @3091
+    m68k_op_moves_16_al @3092
+    m68k_op_moves_16_aw @3093
+    m68k_op_moves_16_di @3094
+    m68k_op_moves_16_ix @3095
+    m68k_op_moves_16_pd @3096
+    m68k_op_moves_16_pi @3097
+    m68k_op_moves_32_ai @3098
+    m68k_op_moves_32_al @3099
+    m68k_op_moves_32_aw @3100
+    m68k_op_moves_32_di @3101
+    m68k_op_moves_32_ix @3102
+    m68k_op_moves_32_pd @3103
+    m68k_op_moves_32_pi @3104
+    m68k_op_moves_8_ai @3105
+    m68k_op_moves_8_al @3106
+    m68k_op_moves_8_aw @3107
+    m68k_op_moves_8_di @3108
+    m68k_op_moves_8_ix @3109
+    m68k_op_moves_8_pd @3110
+    m68k_op_moves_8_pd7 @3111
+    m68k_op_moves_8_pi @3112
+    m68k_op_moves_8_pi7 @3113
+    m68k_op_mull_32_ai @3114
+    m68k_op_mull_32_al @3115
+    m68k_op_mull_32_aw @3116
+    m68k_op_mull_32_d @3117
+    m68k_op_mull_32_di @3118
+    m68k_op_mull_32_i @3119
+    m68k_op_mull_32_ix @3120
+    m68k_op_mull_32_pcdi @3121
+    m68k_op_mull_32_pcix @3122
+    m68k_op_mull_32_pd @3123
+    m68k_op_mull_32_pi @3124
+    m68k_op_muls_16_ai @3125
+    m68k_op_muls_16_al @3126
+    m68k_op_muls_16_aw @3127
+    m68k_op_muls_16_d @3128
+    m68k_op_muls_16_di @3129
+    m68k_op_muls_16_i @3130
+    m68k_op_muls_16_ix @3131
+    m68k_op_muls_16_pcdi @3132
+    m68k_op_muls_16_pcix @3133
+    m68k_op_muls_16_pd @3134
+    m68k_op_muls_16_pi @3135
+    m68k_op_mulu_16_ai @3136
+    m68k_op_mulu_16_al @3137
+    m68k_op_mulu_16_aw @3138
+    m68k_op_mulu_16_d @3139
+    m68k_op_mulu_16_di @3140
+    m68k_op_mulu_16_i @3141
+    m68k_op_mulu_16_ix @3142
+    m68k_op_mulu_16_pcdi @3143
+    m68k_op_mulu_16_pcix @3144
+    m68k_op_mulu_16_pd @3145
+    m68k_op_mulu_16_pi @3146
+    m68k_op_nbcd_8_ai @3147
+    m68k_op_nbcd_8_al @3148
+    m68k_op_nbcd_8_aw @3149
+    m68k_op_nbcd_8_d @3150
+    m68k_op_nbcd_8_di @3151
+    m68k_op_nbcd_8_ix @3152
+    m68k_op_nbcd_8_pd @3153
+    m68k_op_nbcd_8_pd7 @3154
+    m68k_op_nbcd_8_pi @3155
+    m68k_op_nbcd_8_pi7 @3156
+    m68k_op_neg_16_ai @3157
+    m68k_op_neg_16_al @3158
+    m68k_op_neg_16_aw @3159
+    m68k_op_neg_16_d @3160
+    m68k_op_neg_16_di @3161
+    m68k_op_neg_16_ix @3162
+    m68k_op_neg_16_pd @3163
+    m68k_op_neg_16_pi @3164
+    m68k_op_neg_32_ai @3165
+    m68k_op_neg_32_al @3166
+    m68k_op_neg_32_aw @3167
+    m68k_op_neg_32_d @3168
+    m68k_op_neg_32_di @3169
+    m68k_op_neg_32_ix @3170
+    m68k_op_neg_32_pd @3171
+    m68k_op_neg_32_pi @3172
+    m68k_op_neg_8_ai @3173
+    m68k_op_neg_8_al @3174
+    m68k_op_neg_8_aw @3175
+    m68k_op_neg_8_d @3176
+    m68k_op_neg_8_di @3177
+    m68k_op_neg_8_ix @3178
+    m68k_op_neg_8_pd @3179
+    m68k_op_neg_8_pd7 @3180
+    m68k_op_neg_8_pi @3181
+    m68k_op_neg_8_pi7 @3182
+    m68k_op_negx_16_ai @3183
+    m68k_op_negx_16_al @3184
+    m68k_op_negx_16_aw @3185
+    m68k_op_negx_16_d @3186
+    m68k_op_negx_16_di @3187
+    m68k_op_negx_16_ix @3188
+    m68k_op_negx_16_pd @3189
+    m68k_op_negx_16_pi @3190
+    m68k_op_negx_32_ai @3191
+    m68k_op_negx_32_al @3192
+    m68k_op_negx_32_aw @3193
+    m68k_op_negx_32_d @3194
+    m68k_op_negx_32_di @3195
+    m68k_op_negx_32_ix @3196
+    m68k_op_negx_32_pd @3197
+    m68k_op_negx_32_pi @3198
+    m68k_op_negx_8_ai @3199
+    m68k_op_negx_8_al @3200
+    m68k_op_negx_8_aw @3201
+    m68k_op_negx_8_d @3202
+    m68k_op_negx_8_di @3203
+    m68k_op_negx_8_ix @3204
+    m68k_op_negx_8_pd @3205
+    m68k_op_negx_8_pd7 @3206
+    m68k_op_negx_8_pi @3207
+    m68k_op_negx_8_pi7 @3208
+    m68k_op_nop @3209
+    m68k_op_not_16_ai @3210
+    m68k_op_not_16_al @3211
+    m68k_op_not_16_aw @3212
+    m68k_op_not_16_d @3213
+    m68k_op_not_16_di @3214
+    m68k_op_not_16_ix @3215
+    m68k_op_not_16_pd @3216
+    m68k_op_not_16_pi @3217
+    m68k_op_not_32_ai @3218
+    m68k_op_not_32_al @3219
+    m68k_op_not_32_aw @3220
+    m68k_op_not_32_d @3221
+    m68k_op_not_32_di @3222
+    m68k_op_not_32_ix @3223
+    m68k_op_not_32_pd @3224
+    m68k_op_not_32_pi @3225
+    m68k_op_not_8_ai @3226
+    m68k_op_not_8_al @3227
+    m68k_op_not_8_aw @3228
+    m68k_op_not_8_d @3229
+    m68k_op_not_8_di @3230
+    m68k_op_not_8_ix @3231
+    m68k_op_not_8_pd @3232
+    m68k_op_not_8_pd7 @3233
+    m68k_op_not_8_pi @3234
+    m68k_op_not_8_pi7 @3235
+    m68k_op_or_16_er_ai @3236
+    m68k_op_or_16_er_al @3237
+    m68k_op_or_16_er_aw @3238
+    m68k_op_or_16_er_d @3239
+    m68k_op_or_16_er_di @3240
+    m68k_op_or_16_er_i @3241
+    m68k_op_or_16_er_ix @3242
+    m68k_op_or_16_er_pcdi @3243
+    m68k_op_or_16_er_pcix @3244
+    m68k_op_or_16_er_pd @3245
+    m68k_op_or_16_er_pi @3246
+    m68k_op_or_16_re_ai @3247
+    m68k_op_or_16_re_al @3248
+    m68k_op_or_16_re_aw @3249
+    m68k_op_or_16_re_di @3250
+    m68k_op_or_16_re_ix @3251
+    m68k_op_or_16_re_pd @3252
+    m68k_op_or_16_re_pi @3253
+    m68k_op_or_32_er_ai @3254
+    m68k_op_or_32_er_al @3255
+    m68k_op_or_32_er_aw @3256
+    m68k_op_or_32_er_d @3257
+    m68k_op_or_32_er_di @3258
+    m68k_op_or_32_er_i @3259
+    m68k_op_or_32_er_ix @3260
+    m68k_op_or_32_er_pcdi @3261
+    m68k_op_or_32_er_pcix @3262
+    m68k_op_or_32_er_pd @3263
+    m68k_op_or_32_er_pi @3264
+    m68k_op_or_32_re_ai @3265
+    m68k_op_or_32_re_al @3266
+    m68k_op_or_32_re_aw @3267
+    m68k_op_or_32_re_di @3268
+    m68k_op_or_32_re_ix @3269
+    m68k_op_or_32_re_pd @3270
+    m68k_op_or_32_re_pi @3271
+    m68k_op_or_8_er_ai @3272
+    m68k_op_or_8_er_al @3273
+    m68k_op_or_8_er_aw @3274
+    m68k_op_or_8_er_d @3275
+    m68k_op_or_8_er_di @3276
+    m68k_op_or_8_er_i @3277
+    m68k_op_or_8_er_ix @3278
+    m68k_op_or_8_er_pcdi @3279
+    m68k_op_or_8_er_pcix @3280
+    m68k_op_or_8_er_pd @3281
+    m68k_op_or_8_er_pd7 @3282
+    m68k_op_or_8_er_pi @3283
+    m68k_op_or_8_er_pi7 @3284
+    m68k_op_or_8_re_ai @3285
+    m68k_op_or_8_re_al @3286
+    m68k_op_or_8_re_aw @3287
+    m68k_op_or_8_re_di @3288
+    m68k_op_or_8_re_ix @3289
+    m68k_op_or_8_re_pd @3290
+    m68k_op_or_8_re_pd7 @3291
+    m68k_op_or_8_re_pi @3292
+    m68k_op_or_8_re_pi7 @3293
+    m68k_op_ori_16_ai @3294
+    m68k_op_ori_16_al @3295
+    m68k_op_ori_16_aw @3296
+    m68k_op_ori_16_d @3297
+    m68k_op_ori_16_di @3298
+    m68k_op_ori_16_ix @3299
+    m68k_op_ori_16_pd @3300
+    m68k_op_ori_16_pi @3301
+    m68k_op_ori_16_toc @3302
+    m68k_op_ori_16_tos @3303
+    m68k_op_ori_32_ai @3304
+    m68k_op_ori_32_al @3305
+    m68k_op_ori_32_aw @3306
+    m68k_op_ori_32_d @3307
+    m68k_op_ori_32_di @3308
+    m68k_op_ori_32_ix @3309
+    m68k_op_ori_32_pd @3310
+    m68k_op_ori_32_pi @3311
+    m68k_op_ori_8_ai @3312
+    m68k_op_ori_8_al @3313
+    m68k_op_ori_8_aw @3314
+    m68k_op_ori_8_d @3315
+    m68k_op_ori_8_di @3316
+    m68k_op_ori_8_ix @3317
+    m68k_op_ori_8_pd @3318
+    m68k_op_ori_8_pd7 @3319
+    m68k_op_ori_8_pi @3320
+    m68k_op_ori_8_pi7 @3321
+    m68k_op_pack_16_mm @3322
+    m68k_op_pack_16_mm_ax7 @3323
+    m68k_op_pack_16_mm_axy7 @3324
+    m68k_op_pack_16_mm_ay7 @3325
+    m68k_op_pack_16_rr @3326
+    m68k_op_pea_32_ai @3327
+    m68k_op_pea_32_al @3328
+    m68k_op_pea_32_aw @3329
+    m68k_op_pea_32_di @3330
+    m68k_op_pea_32_ix @3331
+    m68k_op_pea_32_pcdi @3332
+    m68k_op_pea_32_pcix @3333
+    m68k_op_pflush_32 @3334
+    m68k_op_reset @3335
+    m68k_op_rol_16_ai @3336
+    m68k_op_rol_16_al @3337
+    m68k_op_rol_16_aw @3338
+    m68k_op_rol_16_di @3339
+    m68k_op_rol_16_ix @3340
+    m68k_op_rol_16_pd @3341
+    m68k_op_rol_16_pi @3342
+    m68k_op_rol_16_r @3343
+    m68k_op_rol_16_s @3344
+    m68k_op_rol_32_r @3345
+    m68k_op_rol_32_s @3346
+    m68k_op_rol_8_r @3347
+    m68k_op_rol_8_s @3348
+    m68k_op_ror_16_ai @3349
+    m68k_op_ror_16_al @3350
+    m68k_op_ror_16_aw @3351
+    m68k_op_ror_16_di @3352
+    m68k_op_ror_16_ix @3353
+    m68k_op_ror_16_pd @3354
+    m68k_op_ror_16_pi @3355
+    m68k_op_ror_16_r @3356
+    m68k_op_ror_16_s @3357
+    m68k_op_ror_32_r @3358
+    m68k_op_ror_32_s @3359
+    m68k_op_ror_8_r @3360
+    m68k_op_ror_8_s @3361
+    m68k_op_roxl_16_ai @3362
+    m68k_op_roxl_16_al @3363
+    m68k_op_roxl_16_aw @3364
+    m68k_op_roxl_16_di @3365
+    m68k_op_roxl_16_ix @3366
+    m68k_op_roxl_16_pd @3367
+    m68k_op_roxl_16_pi @3368
+    m68k_op_roxl_16_r @3369
+    m68k_op_roxl_16_s @3370
+    m68k_op_roxl_32_r @3371
+    m68k_op_roxl_32_s @3372
+    m68k_op_roxl_8_r @3373
+    m68k_op_roxl_8_s @3374
+    m68k_op_roxr_16_ai @3375
+    m68k_op_roxr_16_al @3376
+    m68k_op_roxr_16_aw @3377
+    m68k_op_roxr_16_di @3378
+    m68k_op_roxr_16_ix @3379
+    m68k_op_roxr_16_pd @3380
+    m68k_op_roxr_16_pi @3381
+    m68k_op_roxr_16_r @3382
+    m68k_op_roxr_16_s @3383
+    m68k_op_roxr_32_r @3384
+    m68k_op_roxr_32_s @3385
+    m68k_op_roxr_8_r @3386
+    m68k_op_roxr_8_s @3387
+    m68k_op_rtd_32 @3388
+    m68k_op_rte_32 @3389
+    m68k_op_rtm_32 @3390
+    m68k_op_rtr_32 @3391
+    m68k_op_rts_32 @3392
+    m68k_op_sbcd_8_mm @3393
+    m68k_op_sbcd_8_mm_ax7 @3394
+    m68k_op_sbcd_8_mm_axy7 @3395
+    m68k_op_sbcd_8_mm_ay7 @3396
+    m68k_op_sbcd_8_rr @3397
+    m68k_op_scc_8_ai @3398
+    m68k_op_scc_8_al @3399
+    m68k_op_scc_8_aw @3400
+    m68k_op_scc_8_d @3401
+    m68k_op_scc_8_di @3402
+    m68k_op_scc_8_ix @3403
+    m68k_op_scc_8_pd @3404
+    m68k_op_scc_8_pd7 @3405
+    m68k_op_scc_8_pi @3406
+    m68k_op_scc_8_pi7 @3407
+    m68k_op_scs_8_ai @3408
+    m68k_op_scs_8_al @3409
+    m68k_op_scs_8_aw @3410
+    m68k_op_scs_8_d @3411
+    m68k_op_scs_8_di @3412
+    m68k_op_scs_8_ix @3413
+    m68k_op_scs_8_pd @3414
+    m68k_op_scs_8_pd7 @3415
+    m68k_op_scs_8_pi @3416
+    m68k_op_scs_8_pi7 @3417
+    m68k_op_seq_8_ai @3418
+    m68k_op_seq_8_al @3419
+    m68k_op_seq_8_aw @3420
+    m68k_op_seq_8_d @3421
+    m68k_op_seq_8_di @3422
+    m68k_op_seq_8_ix @3423
+    m68k_op_seq_8_pd @3424
+    m68k_op_seq_8_pd7 @3425
+    m68k_op_seq_8_pi @3426
+    m68k_op_seq_8_pi7 @3427
+    m68k_op_sf_8_ai @3428
+    m68k_op_sf_8_al @3429
+    m68k_op_sf_8_aw @3430
+    m68k_op_sf_8_d @3431
+    m68k_op_sf_8_di @3432
+    m68k_op_sf_8_ix @3433
+    m68k_op_sf_8_pd @3434
+    m68k_op_sf_8_pd7 @3435
+    m68k_op_sf_8_pi @3436
+    m68k_op_sf_8_pi7 @3437
+    m68k_op_sge_8_ai @3438
+    m68k_op_sge_8_al @3439
+    m68k_op_sge_8_aw @3440
+    m68k_op_sge_8_d @3441
+    m68k_op_sge_8_di @3442
+    m68k_op_sge_8_ix @3443
+    m68k_op_sge_8_pd @3444
+    m68k_op_sge_8_pd7 @3445
+    m68k_op_sge_8_pi @3446
+    m68k_op_sge_8_pi7 @3447
+    m68k_op_sgt_8_ai @3448
+    m68k_op_sgt_8_al @3449
+    m68k_op_sgt_8_aw @3450
+    m68k_op_sgt_8_d @3451
+    m68k_op_sgt_8_di @3452
+    m68k_op_sgt_8_ix @3453
+    m68k_op_sgt_8_pd @3454
+    m68k_op_sgt_8_pd7 @3455
+    m68k_op_sgt_8_pi @3456
+    m68k_op_sgt_8_pi7 @3457
+    m68k_op_shi_8_ai @3458
+    m68k_op_shi_8_al @3459
+    m68k_op_shi_8_aw @3460
+    m68k_op_shi_8_d @3461
+    m68k_op_shi_8_di @3462
+    m68k_op_shi_8_ix @3463
+    m68k_op_shi_8_pd @3464
+    m68k_op_shi_8_pd7 @3465
+    m68k_op_shi_8_pi @3466
+    m68k_op_shi_8_pi7 @3467
+    m68k_op_sle_8_ai @3468
+    m68k_op_sle_8_al @3469
+    m68k_op_sle_8_aw @3470
+    m68k_op_sle_8_d @3471
+    m68k_op_sle_8_di @3472
+    m68k_op_sle_8_ix @3473
+    m68k_op_sle_8_pd @3474
+    m68k_op_sle_8_pd7 @3475
+    m68k_op_sle_8_pi @3476
+    m68k_op_sle_8_pi7 @3477
+    m68k_op_sls_8_ai @3478
+    m68k_op_sls_8_al @3479
+    m68k_op_sls_8_aw @3480
+    m68k_op_sls_8_d @3481
+    m68k_op_sls_8_di @3482
+    m68k_op_sls_8_ix @3483
+    m68k_op_sls_8_pd @3484
+    m68k_op_sls_8_pd7 @3485
+    m68k_op_sls_8_pi @3486
+    m68k_op_sls_8_pi7 @3487
+    m68k_op_slt_8_ai @3488
+    m68k_op_slt_8_al @3489
+    m68k_op_slt_8_aw @3490
+    m68k_op_slt_8_d @3491
+    m68k_op_slt_8_di @3492
+    m68k_op_slt_8_ix @3493
+    m68k_op_slt_8_pd @3494
+    m68k_op_slt_8_pd7 @3495
+    m68k_op_slt_8_pi @3496
+    m68k_op_slt_8_pi7 @3497
+    m68k_op_smi_8_ai @3498
+    m68k_op_smi_8_al @3499
+    m68k_op_smi_8_aw @3500
+    m68k_op_smi_8_d @3501
+    m68k_op_smi_8_di @3502
+    m68k_op_smi_8_ix @3503
+    m68k_op_smi_8_pd @3504
+    m68k_op_smi_8_pd7 @3505
+    m68k_op_smi_8_pi @3506
+    m68k_op_smi_8_pi7 @3507
+    m68k_op_sne_8_ai @3508
+    m68k_op_sne_8_al @3509
+    m68k_op_sne_8_aw @3510
+    m68k_op_sne_8_d @3511
+    m68k_op_sne_8_di @3512
+    m68k_op_sne_8_ix @3513
+    m68k_op_sne_8_pd @3514
+    m68k_op_sne_8_pd7 @3515
+    m68k_op_sne_8_pi @3516
+    m68k_op_sne_8_pi7 @3517
+    m68k_op_spl_8_ai @3518
+    m68k_op_spl_8_al @3519
+    m68k_op_spl_8_aw @3520
+    m68k_op_spl_8_d @3521
+    m68k_op_spl_8_di @3522
+    m68k_op_spl_8_ix @3523
+    m68k_op_spl_8_pd @3524
+    m68k_op_spl_8_pd7 @3525
+    m68k_op_spl_8_pi @3526
+    m68k_op_spl_8_pi7 @3527
+    m68k_op_st_8_ai @3528
+    m68k_op_st_8_al @3529
+    m68k_op_st_8_aw @3530
+    m68k_op_st_8_d @3531
+    m68k_op_st_8_di @3532
+    m68k_op_st_8_ix @3533
+    m68k_op_st_8_pd @3534
+    m68k_op_st_8_pd7 @3535
+    m68k_op_st_8_pi @3536
+    m68k_op_st_8_pi7 @3537
+    m68k_op_stop @3538
+    m68k_op_sub_16_er_a @3539
+    m68k_op_sub_16_er_ai @3540
+    m68k_op_sub_16_er_al @3541
+    m68k_op_sub_16_er_aw @3542
+    m68k_op_sub_16_er_d @3543
+    m68k_op_sub_16_er_di @3544
+    m68k_op_sub_16_er_i @3545
+    m68k_op_sub_16_er_ix @3546
+    m68k_op_sub_16_er_pcdi @3547
+    m68k_op_sub_16_er_pcix @3548
+    m68k_op_sub_16_er_pd @3549
+    m68k_op_sub_16_er_pi @3550
+    m68k_op_sub_16_re_ai @3551
+    m68k_op_sub_16_re_al @3552
+    m68k_op_sub_16_re_aw @3553
+    m68k_op_sub_16_re_di @3554
+    m68k_op_sub_16_re_ix @3555
+    m68k_op_sub_16_re_pd @3556
+    m68k_op_sub_16_re_pi @3557
+    m68k_op_sub_32_er_a @3558
+    m68k_op_sub_32_er_ai @3559
+    m68k_op_sub_32_er_al @3560
+    m68k_op_sub_32_er_aw @3561
+    m68k_op_sub_32_er_d @3562
+    m68k_op_sub_32_er_di @3563
+    m68k_op_sub_32_er_i @3564
+    m68k_op_sub_32_er_ix @3565
+    m68k_op_sub_32_er_pcdi @3566
+    m68k_op_sub_32_er_pcix @3567
+    m68k_op_sub_32_er_pd @3568
+    m68k_op_sub_32_er_pi @3569
+    m68k_op_sub_32_re_ai @3570
+    m68k_op_sub_32_re_al @3571
+    m68k_op_sub_32_re_aw @3572
+    m68k_op_sub_32_re_di @3573
+    m68k_op_sub_32_re_ix @3574
+    m68k_op_sub_32_re_pd @3575
+    m68k_op_sub_32_re_pi @3576
+    m68k_op_sub_8_er_ai @3577
+    m68k_op_sub_8_er_al @3578
+    m68k_op_sub_8_er_aw @3579
+    m68k_op_sub_8_er_d @3580
+    m68k_op_sub_8_er_di @3581
+    m68k_op_sub_8_er_i @3582
+    m68k_op_sub_8_er_ix @3583
+    m68k_op_sub_8_er_pcdi @3584
+    m68k_op_sub_8_er_pcix @3585
+    m68k_op_sub_8_er_pd @3586
+    m68k_op_sub_8_er_pd7 @3587
+    m68k_op_sub_8_er_pi @3588
+    m68k_op_sub_8_er_pi7 @3589
+    m68k_op_sub_8_re_ai @3590
+    m68k_op_sub_8_re_al @3591
+    m68k_op_sub_8_re_aw @3592
+    m68k_op_sub_8_re_di @3593
+    m68k_op_sub_8_re_ix @3594
+    m68k_op_sub_8_re_pd @3595
+    m68k_op_sub_8_re_pd7 @3596
+    m68k_op_sub_8_re_pi @3597
+    m68k_op_sub_8_re_pi7 @3598
+    m68k_op_suba_16_a @3599
+    m68k_op_suba_16_ai @3600
+    m68k_op_suba_16_al @3601
+    m68k_op_suba_16_aw @3602
+    m68k_op_suba_16_d @3603
+    m68k_op_suba_16_di @3604
+    m68k_op_suba_16_i @3605
+    m68k_op_suba_16_ix @3606
+    m68k_op_suba_16_pcdi @3607
+    m68k_op_suba_16_pcix @3608
+    m68k_op_suba_16_pd @3609
+    m68k_op_suba_16_pi @3610
+    m68k_op_suba_32_a @3611
+    m68k_op_suba_32_ai @3612
+    m68k_op_suba_32_al @3613
+    m68k_op_suba_32_aw @3614
+    m68k_op_suba_32_d @3615
+    m68k_op_suba_32_di @3616
+    m68k_op_suba_32_i @3617
+    m68k_op_suba_32_ix @3618
+    m68k_op_suba_32_pcdi @3619
+    m68k_op_suba_32_pcix @3620
+    m68k_op_suba_32_pd @3621
+    m68k_op_suba_32_pi @3622
+    m68k_op_subi_16_ai @3623
+    m68k_op_subi_16_al @3624
+    m68k_op_subi_16_aw @3625
+    m68k_op_subi_16_d @3626
+    m68k_op_subi_16_di @3627
+    m68k_op_subi_16_ix @3628
+    m68k_op_subi_16_pd @3629
+    m68k_op_subi_16_pi @3630
+    m68k_op_subi_32_ai @3631
+    m68k_op_subi_32_al @3632
+    m68k_op_subi_32_aw @3633
+    m68k_op_subi_32_d @3634
+    m68k_op_subi_32_di @3635
+    m68k_op_subi_32_ix @3636
+    m68k_op_subi_32_pd @3637
+    m68k_op_subi_32_pi @3638
+    m68k_op_subi_8_ai @3639
+    m68k_op_subi_8_al @3640
+    m68k_op_subi_8_aw @3641
+    m68k_op_subi_8_d @3642
+    m68k_op_subi_8_di @3643
+    m68k_op_subi_8_ix @3644
+    m68k_op_subi_8_pd @3645
+    m68k_op_subi_8_pd7 @3646
+    m68k_op_subi_8_pi @3647
+    m68k_op_subi_8_pi7 @3648
+    m68k_op_subq_16_a @3649
+    m68k_op_subq_16_ai @3650
+    m68k_op_subq_16_al @3651
+    m68k_op_subq_16_aw @3652
+    m68k_op_subq_16_d @3653
+    m68k_op_subq_16_di @3654
+    m68k_op_subq_16_ix @3655
+    m68k_op_subq_16_pd @3656
+    m68k_op_subq_16_pi @3657
+    m68k_op_subq_32_a @3658
+    m68k_op_subq_32_ai @3659
+    m68k_op_subq_32_al @3660
+    m68k_op_subq_32_aw @3661
+    m68k_op_subq_32_d @3662
+    m68k_op_subq_32_di @3663
+    m68k_op_subq_32_ix @3664
+    m68k_op_subq_32_pd @3665
+    m68k_op_subq_32_pi @3666
+    m68k_op_subq_8_ai @3667
+    m68k_op_subq_8_al @3668
+    m68k_op_subq_8_aw @3669
+    m68k_op_subq_8_d @3670
+    m68k_op_subq_8_di @3671
+    m68k_op_subq_8_ix @3672
+    m68k_op_subq_8_pd @3673
+    m68k_op_subq_8_pd7 @3674
+    m68k_op_subq_8_pi @3675
+    m68k_op_subq_8_pi7 @3676
+    m68k_op_subx_16_mm @3677
+    m68k_op_subx_16_rr @3678
+    m68k_op_subx_32_mm @3679
+    m68k_op_subx_32_rr @3680
+    m68k_op_subx_8_mm @3681
+    m68k_op_subx_8_mm_ax7 @3682
+    m68k_op_subx_8_mm_axy7 @3683
+    m68k_op_subx_8_mm_ay7 @3684
+    m68k_op_subx_8_rr @3685
+    m68k_op_svc_8_ai @3686
+    m68k_op_svc_8_al @3687
+    m68k_op_svc_8_aw @3688
+    m68k_op_svc_8_d @3689
+    m68k_op_svc_8_di @3690
+    m68k_op_svc_8_ix @3691
+    m68k_op_svc_8_pd @3692
+    m68k_op_svc_8_pd7 @3693
+    m68k_op_svc_8_pi @3694
+    m68k_op_svc_8_pi7 @3695
+    m68k_op_svs_8_ai @3696
+    m68k_op_svs_8_al @3697
+    m68k_op_svs_8_aw @3698
+    m68k_op_svs_8_d @3699
+    m68k_op_svs_8_di @3700
+    m68k_op_svs_8_ix @3701
+    m68k_op_svs_8_pd @3702
+    m68k_op_svs_8_pd7 @3703
+    m68k_op_svs_8_pi @3704
+    m68k_op_svs_8_pi7 @3705
+    m68k_op_swap_32 @3706
+    m68k_op_tas_8_ai @3707
+    m68k_op_tas_8_al @3708
+    m68k_op_tas_8_aw @3709
+    m68k_op_tas_8_d @3710
+    m68k_op_tas_8_di @3711
+    m68k_op_tas_8_ix @3712
+    m68k_op_tas_8_pd @3713
+    m68k_op_tas_8_pd7 @3714
+    m68k_op_tas_8_pi @3715
+    m68k_op_tas_8_pi7 @3716
+    m68k_op_trap @3717
+    m68k_op_trapcc @3718
+    m68k_op_trapcc_16 @3719
+    m68k_op_trapcc_32 @3720
+    m68k_op_trapcs @3721
+    m68k_op_trapcs_16 @3722
+    m68k_op_trapcs_32 @3723
+    m68k_op_trapeq @3724
+    m68k_op_trapeq_16 @3725
+    m68k_op_trapeq_32 @3726
+    m68k_op_trapf @3727
+    m68k_op_trapf_16 @3728
+    m68k_op_trapf_32 @3729
+    m68k_op_trapge @3730
+    m68k_op_trapge_16 @3731
+    m68k_op_trapge_32 @3732
+    m68k_op_trapgt @3733
+    m68k_op_trapgt_16 @3734
+    m68k_op_trapgt_32 @3735
+    m68k_op_traphi @3736
+    m68k_op_traphi_16 @3737
+    m68k_op_traphi_32 @3738
+    m68k_op_traple @3739
+    m68k_op_traple_16 @3740
+    m68k_op_traple_32 @3741
+    m68k_op_trapls @3742
+    m68k_op_trapls_16 @3743
+    m68k_op_trapls_32 @3744
+    m68k_op_traplt @3745
+    m68k_op_traplt_16 @3746
+    m68k_op_traplt_32 @3747
+    m68k_op_trapmi @3748
+    m68k_op_trapmi_16 @3749
+    m68k_op_trapmi_32 @3750
+    m68k_op_trapne @3751
+    m68k_op_trapne_16 @3752
+    m68k_op_trapne_32 @3753
+    m68k_op_trappl @3754
+    m68k_op_trappl_16 @3755
+    m68k_op_trappl_32 @3756
+    m68k_op_trapt @3757
+    m68k_op_trapt_16 @3758
+    m68k_op_trapt_32 @3759
+    m68k_op_trapv @3760
+    m68k_op_trapvc @3761
+    m68k_op_trapvc_16 @3762
+    m68k_op_trapvc_32 @3763
+    m68k_op_trapvs @3764
+    m68k_op_trapvs_16 @3765
+    m68k_op_trapvs_32 @3766
+    m68k_op_tst_16_a @3767
+    m68k_op_tst_16_ai @3768
+    m68k_op_tst_16_al @3769
+    m68k_op_tst_16_aw @3770
+    m68k_op_tst_16_d @3771
+    m68k_op_tst_16_di @3772
+    m68k_op_tst_16_i @3773
+    m68k_op_tst_16_ix @3774
+    m68k_op_tst_16_pcdi @3775
+    m68k_op_tst_16_pcix @3776
+    m68k_op_tst_16_pd @3777
+    m68k_op_tst_16_pi @3778
+    m68k_op_tst_32_a @3779
+    m68k_op_tst_32_ai @3780
+    m68k_op_tst_32_al @3781
+    m68k_op_tst_32_aw @3782
+    m68k_op_tst_32_d @3783
+    m68k_op_tst_32_di @3784
+    m68k_op_tst_32_i @3785
+    m68k_op_tst_32_ix @3786
+    m68k_op_tst_32_pcdi @3787
+    m68k_op_tst_32_pcix @3788
+    m68k_op_tst_32_pd @3789
+    m68k_op_tst_32_pi @3790
+    m68k_op_tst_8_ai @3791
+    m68k_op_tst_8_al @3792
+    m68k_op_tst_8_aw @3793
+    m68k_op_tst_8_d @3794
+    m68k_op_tst_8_di @3795
+    m68k_op_tst_8_i @3796
+    m68k_op_tst_8_ix @3797
+    m68k_op_tst_8_pcdi @3798
+    m68k_op_tst_8_pcix @3799
+    m68k_op_tst_8_pd @3800
+    m68k_op_tst_8_pd7 @3801
+    m68k_op_tst_8_pi @3802
+    m68k_op_tst_8_pi7 @3803
+    m68k_op_unlk_32 @3804
+    m68k_op_unlk_32_a7 @3805
+    m68k_op_unpk_16_mm @3806
+    m68k_op_unpk_16_mm_ax7 @3807
+    m68k_op_unpk_16_mm_axy7 @3808
+    m68k_op_unpk_16_mm_ay7 @3809
+    m68k_op_unpk_16_rr @3810
+    m68k_pulse_halt @3811
+    m68k_pulse_reset @3812
+    m68k_read_memory_16 @3813
+    m68k_read_memory_32 @3814
+    m68k_read_memory_8 @3815
+    m68k_set_bkpt_ack_callback @3816
+    m68k_set_cmpild_instr_callback @3817
+    m68k_set_context @3818
+    m68k_set_cpu_type @3819
+    m68k_set_fc_callback @3820
+    m68k_set_instr_hook_callback @3821
+    m68k_set_int_ack_callback @3822
+    m68k_set_irq @3823
+    m68k_set_pc_changed_callback @3824
+    m68k_set_reg @3825
+    m68k_set_reset_instr_callback @3826
+    m68k_set_rte_instr_callback @3827
+    m68k_set_tas_instr_callback @3828
+    m68k_write_memory_16 @3829
+    m68k_write_memory_32 @3830
+    m68k_write_memory_8 @3831
+    m68ki_address_space @3832 DATA
+    m68ki_aerr_address @3833 DATA
+    m68ki_aerr_fc @3834 DATA
+    m68ki_aerr_write_mode @3835 DATA
+    m68ki_build_opcode_table @3836
+    m68ki_cpu @3837 DATA
+    m68ki_cpu_names @3838 DATA
+    m68ki_cycles @3839 DATA
+    m68ki_ea_idx_cycle_table @3840 DATA
+    m68ki_exception_cycle_table @3841 DATA
+    m68ki_initial_cycles @3842 DATA
+    m68ki_instruction_jump_table @3843 DATA
+    m68ki_remaining_cycles @3844 DATA
+    m68ki_shift_16_table @3845 DATA
+    m68ki_shift_32_table @3846 DATA
+    m68ki_shift_8_table @3847 DATA
+    m68ki_tracing @3848 DATA
+    m92_rw @3849 DATA
+    mac_op_mf @3850
+    mac_op_mf_xop @3851
+    mac_op_mr @3852
+    mac_op_mr_xop @3853
+    majtitl2_decryption_table @3854 DATA
+    mappy_sound_enable_w @3855
+    mappy_sound_w @3856
+    mcr_dac_interface @3857 DATA
+    memory_boot @3858
+    memory_context_switch @3859
+    memory_cpu_iorw @3860
+    memory_cpu_readop @3861
+    memory_cpu_rw @3862
+    memory_read8 @3863
+    memory_readop8 @3864
+    memory_readport8 @3865
+    memory_register_cpu @3866
+    memory_reset @3867
+    memory_shutdown @3868
+    memory_write8 @3869
+    memory_writeport8 @3870
+    mid_rw @3871 DATA
+    mixer_get_chan_level @3872
+    mixer_get_chan_name @3873
+    mixer_get_chan_pan @3874
+    mixer_get_name @3875
+    mixer_get_num_chans @3876
+    mixer_get_num_streams @3877
+    mixer_set_chan_level @3878
+    mixer_set_chan_pan @3879
+    mixer_set_stereo_pan @3880
+    mixer_set_stereo_volume @3881
+    mixer_set_volume @3882
+    mixer_sound_enable_global_w @3883
+    msg @3884
+    msm5205_interface @3885 DATA
+    multipcm_set_bank @3886
+    myRam @3887 DATA
+    mysticri_decryption_table @3888 DATA
+    n7751_dasm @3889
+    n7751_execute @3890
+    n7751_exit @3891
+    n7751_get_context @3892
+    n7751_get_reg @3893
+    n7751_getcycles @3894
+    n7751_info @3895
+    n7751_init @3896
+    n7751_reset @3897
+    n7751_set_context @3898
+    n7751_set_irq_callback @3899
+    n7751_set_irq_line @3900
+    n7751_set_reg @3901
+    n7751_yield @3902
+    nDSoundFps @3903 DATA
+    nDSoundSamRate @3904 DATA
+    nDSoundSegCount @3905 DATA
+    nDSoundSegLen @3906 DATA
+    namco_sh_start @3907
+    namco_sh_stop @3908
+    namco_soundregs @3909 DATA
+    namco_wavedata @3910 DATA
+    namcos1_sound_r @3911
+    namcos1_sound_w @3912
+    namcos1_wavedata_r @3913
+    namcos1_wavedata_w @3914
+    narc_dac_interface @3915 DATA
+    nch @3916 DATA
+    nec_ICount @3917 DATA
+    nec_dasm @3918
+    nec_exit @3919
+    nec_fullCount @3920 DATA
+    nec_get_context @3921
+    nec_get_reg @3922
+    nec_getcycles @3923
+    nec_instruction @3924 DATA
+    nec_irq_callback @3925
+    nec_readmem @3926
+    nec_readop @3927
+    nec_readport @3928
+    nec_reset @3929
+    nec_set_context @3930
+    nec_set_irq_callback @3931
+    nec_set_irq_line @3932
+    nec_set_irqvec @3933
+    nec_set_reg @3934
+    nec_trap @3935
+    nec_writemem @3936
+    nec_writeport @3937
+    nec_yield @3938
+    no_board_msg @3939 DATA
+    no_of_imdcts @3940 DATA
+    non_zero @3941 DATA
+    oso_rw @3942 DATA
+    out_file @3943 DATA
+    pcm_sample @3944 DATA
+    pengo_sound_enable_w @3945
+    pengo_sound_w @3946
+    pia_0_ca1_r @3947
+    pia_0_ca1_w @3948
+    pia_0_ca2_r @3949
+    pia_0_ca2_w @3950
+    pia_0_cb1_r @3951
+    pia_0_cb1_w @3952
+    pia_0_cb2_r @3953
+    pia_0_cb2_w @3954
+    pia_0_lsb_r @3955
+    pia_0_lsb_w @3956
+    pia_0_msb_r @3957
+    pia_0_msb_w @3958
+    pia_0_porta_r @3959
+    pia_0_porta_w @3960
+    pia_0_portb_r @3961
+    pia_0_portb_w @3962
+    pia_0_r @3963
+    pia_0_w @3964
+    pia_1_ca1_r @3965
+    pia_1_ca1_w @3966
+    pia_1_ca2_r @3967
+    pia_1_ca2_w @3968
+    pia_1_cb1_r @3969
+    pia_1_cb1_w @3970
+    pia_1_cb2_r @3971
+    pia_1_cb2_w @3972
+    pia_1_lsb_r @3973
+    pia_1_lsb_w @3974
+    pia_1_msb_r @3975
+    pia_1_msb_w @3976
+    pia_1_porta_r @3977
+    pia_1_porta_w @3978
+    pia_1_portb_r @3979
+    pia_1_portb_w @3980
+    pia_1_r @3981
+    pia_1_w @3982
+    pia_2_ca1_r @3983
+    pia_2_ca1_w @3984
+    pia_2_ca2_r @3985
+    pia_2_ca2_w @3986
+    pia_2_cb1_r @3987
+    pia_2_cb1_w @3988
+    pia_2_cb2_r @3989
+    pia_2_cb2_w @3990
+    pia_2_lsb_r @3991
+    pia_2_lsb_w @3992
+    pia_2_msb_r @3993
+    pia_2_msb_w @3994
+    pia_2_porta_r @3995
+    pia_2_porta_w @3996
+    pia_2_portb_r @3997
+    pia_2_portb_w @3998
+    pia_2_r @3999
+    pia_2_w @4000
+    pia_3_ca1_r @4001
+    pia_3_ca1_w @4002
+    pia_3_ca2_r @4003
+    pia_3_ca2_w @4004
+    pia_3_cb1_r @4005
+    pia_3_cb1_w @4006
+    pia_3_cb2_r @4007
+    pia_3_cb2_w @4008
+    pia_3_lsb_r @4009
+    pia_3_lsb_w @4010
+    pia_3_msb_r @4011
+    pia_3_msb_w @4012
+    pia_3_porta_r @4013
+    pia_3_porta_w @4014
+    pia_3_portb_r @4015
+    pia_3_portb_w @4016
+    pia_3_r @4017
+    pia_3_w @4018
+    pia_4_ca1_r @4019
+    pia_4_ca1_w @4020
+    pia_4_ca2_r @4021
+    pia_4_ca2_w @4022
+    pia_4_cb1_r @4023
+    pia_4_cb1_w @4024
+    pia_4_cb2_r @4025
+    pia_4_cb2_w @4026
+    pia_4_lsb_r @4027
+    pia_4_lsb_w @4028
+    pia_4_msb_r @4029
+    pia_4_msb_w @4030
+    pia_4_porta_r @4031
+    pia_4_porta_w @4032
+    pia_4_portb_r @4033
+    pia_4_portb_w @4034
+    pia_4_r @4035
+    pia_4_w @4036
+    pia_5_ca1_r @4037
+    pia_5_ca1_w @4038
+    pia_5_ca2_r @4039
+    pia_5_ca2_w @4040
+    pia_5_cb1_r @4041
+    pia_5_cb1_w @4042
+    pia_5_cb2_r @4043
+    pia_5_cb2_w @4044
+    pia_5_lsb_r @4045
+    pia_5_lsb_w @4046
+    pia_5_msb_r @4047
+    pia_5_msb_w @4048
+    pia_5_porta_r @4049
+    pia_5_porta_w @4050
+    pia_5_portb_r @4051
+    pia_5_portb_w @4052
+    pia_5_r @4053
+    pia_5_w @4054
+    pia_6_ca1_r @4055
+    pia_6_ca1_w @4056
+    pia_6_ca2_r @4057
+    pia_6_ca2_w @4058
+    pia_6_cb1_r @4059
+    pia_6_cb1_w @4060
+    pia_6_cb2_r @4061
+    pia_6_cb2_w @4062
+    pia_6_lsb_r @4063
+    pia_6_lsb_w @4064
+    pia_6_msb_r @4065
+    pia_6_msb_w @4066
+    pia_6_porta_r @4067
+    pia_6_porta_w @4068
+    pia_6_portb_r @4069
+    pia_6_portb_w @4070
+    pia_6_r @4071
+    pia_6_w @4072
+    pia_7_ca1_r @4073
+    pia_7_ca1_w @4074
+    pia_7_ca2_r @4075
+    pia_7_ca2_w @4076
+    pia_7_cb1_r @4077
+    pia_7_cb1_w @4078
+    pia_7_cb2_r @4079
+    pia_7_cb2_w @4080
+    pia_7_lsb_r @4081
+    pia_7_lsb_w @4082
+    pia_7_msb_r @4083
+    pia_7_msb_w @4084
+    pia_7_porta_r @4085
+    pia_7_porta_w @4086
+    pia_7_portb_r @4087
+    pia_7_portb_w @4088
+    pia_7_r @4089
+    pia_7_w @4090
+    pia_config @4091
+    pia_read @4092
+    pia_reset @4093
+    pia_set_input_a @4094
+    pia_set_input_b @4095
+    pia_set_input_ca1 @4096
+    pia_set_input_ca2 @4097
+    pia_set_input_cb1 @4098
+    pia_set_input_cb2 @4099
+    pia_unconfig @4100
+    pia_write @4101
+    pic16C54_dasm @4102
+    pic16C54_execute @4103
+    pic16C54_exit @4104
+    pic16C54_get_context @4105
+    pic16C54_get_reg @4106
+    pic16C54_info @4107
+    pic16C54_init @4108
+    pic16C54_reset @4109
+    pic16C54_set_context @4110
+    pic16C54_set_irq_callback @4111
+    pic16C54_set_irq_line @4112
+    pic16C54_set_reg @4113
+    pic16C55_dasm @4114
+    pic16C55_execute @4115
+    pic16C55_exit @4116
+    pic16C55_get_context @4117
+    pic16C55_get_reg @4118
+    pic16C55_info @4119
+    pic16C55_init @4120
+    pic16C55_reset @4121
+    pic16C55_set_context @4122
+    pic16C55_set_irq_callback @4123
+    pic16C55_set_irq_line @4124
+    pic16C55_set_reg @4125
+    pic16C56_dasm @4126
+    pic16C56_execute @4127
+    pic16C56_exit @4128
+    pic16C56_get_context @4129
+    pic16C56_get_reg @4130
+    pic16C56_info @4131
+    pic16C56_init @4132
+    pic16C56_reset @4133
+    pic16C56_set_context @4134
+    pic16C56_set_irq_callback @4135
+    pic16C56_set_irq_line @4136
+    pic16C56_set_reg @4137
+    pic16C57_dasm @4138
+    pic16C57_execute @4139
+    pic16C57_exit @4140
+    pic16C57_get_context @4141
+    pic16C57_get_reg @4142
+    pic16C57_info @4143
+    pic16C57_init @4144
+    pic16C57_reset @4145
+    pic16C57_set_context @4146
+    pic16C57_set_irq_callback @4147
+    pic16C57_set_irq_line @4148
+    pic16C57_set_reg @4149
+    pic16C58_dasm @4150
+    pic16C58_execute @4151
+    pic16C58_exit @4152
+    pic16C58_get_context @4153
+    pic16C58_get_reg @4154
+    pic16C58_info @4155
+    pic16C58_init @4156
+    pic16C58_reset @4157
+    pic16C58_set_context @4158
+    pic16C58_set_irq_callback @4159
+    pic16C58_set_irq_line @4160
+    pic16C58_set_reg @4161
+    pic16C5x_execute @4162
+    pic16C5x_exit @4163
+    pic16C5x_get_context @4164
+    pic16C5x_get_reg @4165
+    pic16C5x_icount @4166 DATA
+    pic16C5x_info @4167
+    pic16C5x_init @4168
+    pic16C5x_reset_regs @4169
+    pic16C5x_set_context @4170
+    pic16C5x_set_irq_callback @4171
+    pic16C5x_set_irq_line @4172
+    pic16C5x_set_reg @4173
+    pic16C5x_soft_reset @4174
+    pokey0_update @4175
+    pokey1_break_w @4176
+    pokey1_kbcode_w @4177
+    pokey1_r @4178
+    pokey1_serin_ready @4179
+    pokey1_update @4180
+    pokey1_w @4181
+    pokey2_break_w @4182
+    pokey2_kbcode_w @4183
+    pokey2_r @4184
+    pokey2_serin_ready @4185
+    pokey2_update @4186
+    pokey2_w @4187
+    pokey3_break_w @4188
+    pokey3_kbcode_w @4189
+    pokey3_r @4190
+    pokey3_serin_ready @4191
+    pokey3_update @4192
+    pokey3_w @4193
+    pokey4_break_w @4194
+    pokey4_kbcode_w @4195
+    pokey4_r @4196
+    pokey4_serin_ready @4197
+    pokey4_w @4198
+    pokey_break_w @4199
+    pokey_kbcode_w @4200
+    pokey_register_r @4201
+    pokey_register_w @4202
+    pokey_sh_start @4203
+    pokey_sh_stop @4204
+    pokey_sh_update @4205
+    polepos_sound_w @4206
+    poly @4207
+    premultiply @4208
+    prgrom @4209 DATA
+    prgrom2 @4210 DATA
+    printout @4211
+    psoldier_decryption_table @4212 DATA
+    qsound_clock @4213
+    qsound_cmd_w @4214
+    qsound_data_h_w @4215
+    qsound_data_l_w @4216
+    qsound_interface @4217 DATA
+    qsound_sample_rom @4218 DATA
+    qsound_set_command @4219
+    qsound_sh_start @4220
+    qsound_sh_stop @4221
+    qsound_status_r @4222
+    qsound_update @4223
+    quad_pokey_r @4224
+    quad_pokey_w @4225
+    quit_flag @4226 DATA
+    ready_audio @4227
+    receive_fd @4228 DATA
+    report_header_error @4229
+    requantize_downmix @4230
+    requantize_mono @4231
+    requantize_ms @4232
+    requantize_sample @4233
+    res @4234 DATA
+    rew @4235
+    rewind_stream @4236
+    rf5c400_sh_start @4237
+    rom_get_disk_handle @4238
+    rom_getfilecrc @4239
+    rom_getfilename @4240
+    rom_getfilesize @4241
+    rom_getnum @4242
+    rom_getregion @4243
+    rom_getregionsize @4244
+    rom_loadgame @4245
+    rom_postinit @4246
+    rom_setpath @4247
+    rom_shutdown @4248
+    rtypeleo_decryption_table @4249 DATA
+    s @4250 DATA
+    sample_buffer @4251 DATA
+    samples_init @4252
+    samples_play_chan @4253
+    samples_set_info @4254
+    samples_stop_chan @4255
+    scalefac_l @4256 DATA
+    scalefac_s @4257 DATA
+    scobra_ay8910_interface @4258 DATA
+    scsp_interface @4259 DATA
+    scsp_start @4260
+    seg_prefix @4261 DATA
+    segapcm_interface_15k @4262 DATA
+    segapcm_interface_15k_gforce @4263 DATA
+    segapcm_interface_32k @4264 DATA
+    segapcm_interface_32k_512 @4265 DATA
+    send_fd @4266 DATA
+    set_RC_filter @4267
+    setup_audio @4268
+    sha1_digest @4269
+    sha1_final @4270
+    sha1_init @4271
+    sha1_update @4272
+    sharedram @4273 DATA
+    shift_op @4274
+    shift_op_imm @4275
+    shisen2_decryption_table @4276 DATA
+    show_header @4277
+    sly_rw @4278 DATA
+    sndintf @4279 DATA
+    snkwave_w @4280
+    sound_boot @4281
+    sound_name @4282
+    sound_stop @4283
+    spcm @4284 DATA
+    ss22_rw @4285 DATA
+    ssh_rw @4286 DATA
+    state_save_register_INT16 @4287
+    state_save_register_INT32 @4288
+    state_save_register_INT8 @4289
+    state_save_register_UINT16 @4290
+    state_save_register_UINT32 @4291
+    state_save_register_UINT8 @4292
+    state_save_register_double @4293
+    state_save_register_func_postload @4294
+    state_save_register_func_presave @4295
+    state_save_register_int @4296
+    statusDisplay @4297
+    stop_flag @4298 DATA
+    stream_init @4299
+    stream_init_multi @4300
+    stream_set_srate @4301
+    stream_update @4302
+    streams_sh_start @4303
+    streams_sh_stop @4304
+    streams_sh_update @4305
+    sys16_7751_dac_interface @4306 DATA
+    sys18_rf5c68_interface @4307 DATA
+    sys18_ym3438_interface @4308 DATA
+    sys32_rf5c68_interface @4309 DATA
+    sys32_ym3438_interface @4310 DATA
+    t_alloc0 @4311 DATA
+    t_alloc1 @4312 DATA
+    t_alloc2 @4313 DATA
+    t_alloc3 @4314 DATA
+    t_allocMPG2 @4315 DATA
+    t_b8_l @4316 DATA
+    t_b8_s @4317 DATA
+    t_bitrate @4318 DATA
+    t_bpc @4319 DATA
+    t_c @4320 DATA
+    t_d @4321 DATA
+    t_dd @4322 DATA
+    t_grouping @4323 DATA
+    t_l @4324 DATA
+    t_linbits @4325 DATA
+    t_nbal0 @4326 DATA
+    t_nbal1 @4327 DATA
+    t_nbal2 @4328 DATA
+    t_nbal3 @4329 DATA
+    t_nbalMPG2 @4330 DATA
+    t_nlevels @4331 DATA
+    t_nli @4332 DATA
+    t_s @4333 DATA
+    t_sampling_frequency @4334 DATA
+    t_scalefactor @4335 DATA
+    tables @4336 DATA
+    taitosound_comm16_lsb_r @4337
+    taitosound_comm16_lsb_w @4338
+    taitosound_comm16_msb_r @4339
+    taitosound_comm16_msb_w @4340
+    taitosound_comm_r @4341
+    taitosound_comm_w @4342
+    taitosound_port16_lsb_w @4343
+    taitosound_port16_msb_w @4344
+    taitosound_port_w @4345
+    taitosound_slave_comm_r @4346
+    taitosound_slave_comm_w @4347
+    taitosound_slave_port_w @4348
+    timeplt_ay8910_interface @4349 DATA
+    timer_add @4350
+    timer_add_cpu @4351
+    timer_adjust @4352
+    timer_alloc @4353
+    timer_clear_cpus @4354
+    timer_clrnoturbo @4355
+    timer_enable @4356
+    timer_get_cpu_clock @4357
+    timer_get_cpu_type @4358
+    timer_get_cur_cpu @4359
+    timer_get_cur_cpu_time @4360
+    timer_get_cur_dsp_time @4361
+    timer_get_last_added_cpu @4362
+    timer_init @4363
+    timer_pulse @4364
+    timer_remove @4365
+    timer_reset @4366
+    timer_restore_cpu @4367
+    timer_run_frame @4368
+    timer_save_cpu @4369
+    timer_set @4370
+    timer_set_slices @4371
+    timer_setnoturbo @4372
+    timer_setturbo @4373
+    timer_spin_cpu @4374
+    timer_timeelapsed @4375
+    timer_unspin_cpu @4376
+    timer_yield @4377
+    tms32010_dasm @4378
+    tms32010_execute @4379
+    tms32010_exit @4380
+    tms32010_get_context @4381
+    tms32010_get_reg @4382
+    tms32010_icount @4383 DATA
+    tms32010_info @4384
+    tms32010_init @4385
+    tms32010_read16 @4386
+    tms32010_readport @4387
+    tms32010_reset @4388
+    tms32010_set_context @4389
+    tms32010_set_irq_callback @4390
+    tms32010_set_irq_line @4391
+    tms32010_set_reg @4392
+    tms32010_write16 @4393
+    tms32010_writeport @4394
+    tms32031_dasm @4395
+    tms32031_execute @4396
+    tms32031_exit @4397
+    tms32031_get_context @4398
+    tms32031_get_reg @4399
+    tms32031_getcycles @4400
+    tms32031_icount @4401 DATA
+    tms32031_info @4402
+    tms32031_init @4403
+    tms32031_read32 @4404
+    tms32031_reset @4405
+    tms32031_set_context @4406
+    tms32031_set_irq_callback @4407
+    tms32031_set_irq_line @4408
+    tms32031_set_reg @4409
+    tms32031_write32 @4410
+    tms32031_yield @4411
+    tms32031ops @4412 DATA
+    tms5220_data_w @4413
+    tms5220_data_write @4414
+    tms5220_int_r @4415
+    tms5220_int_read @4416
+    tms5220_process @4417
+    tms5220_ready_r @4418
+    tms5220_ready_read @4419
+    tms5220_reset @4420
+    tms5220_set_frequency @4421
+    tms5220_set_irq @4422
+    tms5220_sh_start @4423
+    tms5220_sh_stop @4424
+    tms5220_sh_update @4425
+    tms5220_status_r @4426
+    tms5220_status_read @4427
+    tms57002_control_w @4428
+    tms57002_control_word_w @4429
+    tms57002_data_r @4430
+    tms57002_data_w @4431
+    tms57002_data_word_r @4432
+    tms57002_data_word_w @4433
+    tms57002_init @4434
+    tms57002_status_r @4435
+    tms57002_status_word_r @4436
+    toggle @4437 DATA
+    uncompress @4438
+    unzClose @4439
+    unzCloseCurrentFile @4440
+    unzGetCurrentFileInfo @4441
+    unzGetGlobalComment @4442
+    unzGetGlobalInfo @4443
+    unzGetLocalExtrafield @4444
+    unzGoToFirstFile @4445
+    unzGoToNextFile @4446
+    unzLocateFile @4447
+    unzOpen @4448
+    unzOpenCurrentFile @4449
+    unzReadCurrentFile @4450
+    unzStringFileNameCompare @4451
+    unz_copyright @4452 DATA
+    unzeof @4453
+    unztell @4454
+    update @4455 DATA
+    update_envelope @4456
+    v20_dasm @4457
+    v20_execute @4458
+    v20_exit @4459
+    v20_get_context @4460
+    v20_get_reg @4461
+    v20_info @4462
+    v20_init @4463
+    v20_reset @4464
+    v20_set_context @4465
+    v20_set_irq_callback @4466
+    v20_set_irq_line @4467
+    v20_set_reg @4468
+    v30_dasm @4469
+    v30_execute @4470
+    v30_exit @4471
+    v30_get_context @4472
+    v30_get_reg @4473
+    v30_info @4474
+    v30_init @4475
+    v30_reset @4476
+    v30_set_context @4477
+    v30_set_irq_callback @4478
+    v30_set_irq_line @4479
+    v30_set_reg @4480
+    v33_dasm @4481
+    v33_execute @4482
+    v33_exit @4483
+    v33_get_context @4484
+    v33_get_reg @4485
+    v33_info @4486
+    v33_init @4487
+    v33_reset @4488
+    v33_set_context @4489
+    v33_set_irq_callback @4490
+    v33_set_irq_line @4491
+    v33_set_reg @4492
+    vgm_close @4493
+    vgm_header_set @4494
+    vgm_idx @4495 DATA
+    vgm_init @4496
+    vgm_open @4497
+    vgm_setpath @4498
+    vgm_start @4499
+    vgm_stop @4500
+    vgm_write @4501
+    vgm_write_large_data @4502
+    vgmlog @4503 DATA
+    warn @4504
+    wavelog @4505 DATA
+    win @4506 DATA
+    workram @4507 DATA
+    xr @4508 DATA
+    ym2151_hack @4509 DATA
+    ym2151_interface @4510 DATA
+    ym2151_last_adr @4511 DATA
+    ym2610_interface @4512 DATA
+    ym_deltat_decode_tableB1 @4513 DATA
+    ym_deltat_decode_tableB2 @4514 DATA
+    ymz280b_update @4515
+    z80_ICount @4516 DATA
+    z80_burn @4517
+    z80_dasm @4518
+    z80_execute @4519
+    z80_exit @4520
+    z80_fullCount @4521 DATA
+    z80_get_context @4522
+    z80_get_cycle_table @4523
+    z80_get_reg @4524
+    z80_getcycles @4525
+    z80_info @4526
+    z80_init @4527
+    z80_irq_callback @4528
+    z80_reset @4529
+    z80_set_context @4530
+    z80_set_cycle_table @4531
+    z80_set_irq_callback @4532
+    z80_set_irq_line @4533
+    z80_set_irqvec @4534
+    z80_set_reg @4535
+    z80_yield @4536
+    z80pat @4537 DATA
+    z80pat2 @4538 DATA
+    z80pat3 @4539 DATA
+    z80pat4 @4540 DATA
+    z80pat5 @4541 DATA
+    zError @4542
+    z_errmsg @4543 DATA
+    zcalloc @4544
+    zcfree @4545
+    zlibCompileFlags @4546
+    zlibVersion @4547
